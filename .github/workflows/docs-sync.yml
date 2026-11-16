@@ -66,6 +66,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}   # Claude GitHub 앱을 설치하지 않고 저장소 토큰으로 실행
           prompt: |
             공식 문서가 바뀌어 일부 레슨을 갱신해야 합니다.
 
