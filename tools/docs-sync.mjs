@@ -1,4 +1,5 @@
 // 공식 문서 변경 감지.
+// (감시 대상은 curriculum.json 에서 "watch": true 로 표시한 레슨만입니다)
 //   node tools/docs-sync.mjs --init              현재 문서 상태를 기준선으로 저장 (content/.docs-hash.json)
 //   node tools/docs-sync.mjs --check             변경된 레슨을 찾아 changed.json 으로 출력 (기준선은 건드리지 않음)
 //   node tools/docs-sync.mjs --accept            check 결과를 기준선에 반영 (PR 머지 전 워크플로에서 사용)
@@ -19,7 +20,7 @@ const base = fs.existsSync(hashFile) ? JSON.parse(fs.readFileSync(hashFile, "utf
 // 공식 문서(code.claude.com)만 감시. 다른 사이트(git-scm 등)는 대상 아님.
 const targets = [];
 for (const lv of cur.levels) for (const c of lv.categories) for (const l of c.lessons)
-  if (!l.soon && l.docsUrl && l.docsUrl.startsWith("https://code.claude.com/docs")) targets.push({ id: l.id, file: l.file, url: l.docsUrl, generated: l.generated || null });
+  if (!l.soon && l.watch === true && l.docsUrl && l.docsUrl.startsWith("https://code.claude.com/docs")) targets.push({ id: l.id, file: l.file, url: l.docsUrl, generated: l.generated || null });
 
 const norm = (t) => t.replace(/\r\n/g, "\n").replace(/[ \t]+$/gm, "").trim();
 const sha = (t) => crypto.createHash("sha256").update(norm(t)).digest("hex");

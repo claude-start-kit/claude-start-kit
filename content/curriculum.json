@@ -26,6 +26,7 @@
               "file": "content/level1/plans-accounts.md",
               "minutes": 3,
               "docsUrl": "https://code.claude.com/docs/en/authentication",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "/status 로 지금 내가 어떤 방식으로 로그인되어 있는지 알려 줘"
             },
@@ -35,6 +36,7 @@
               "file": "content/level1/install-windows.md",
               "minutes": 5,
               "docsUrl": "https://code.claude.com/docs/ko/setup",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "claude doctor 를 실행해서 설치 상태에 문제가 없는지 알려 줘"
             },
@@ -44,6 +46,7 @@
               "file": "content/level1/login-first-run.md",
               "minutes": 4,
               "docsUrl": "https://code.claude.com/docs/ko/quickstart",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "지금 작업 폴더가 어디인지, 어떤 모델을 쓰고 있는지 알려 줘"
             },
@@ -117,6 +120,7 @@
               "file": "content/level2/model-choice.md",
               "minutes": 4,
               "docsUrl": "https://code.claude.com/docs/ko/model-config",
+              "watch": true,
               "lastVerified": "2026-11-16",
               "prompt": "지금 어떤 모델을 쓰고 있는지 알려 주고, Haiku · Sonnet · Opus 차이를 두 줄로 설명해 줘"
             },
@@ -177,6 +181,7 @@
               "file": "content/level2/model-cost.md",
               "minutes": 6,
               "docsUrl": "https://code.claude.com/docs/ko/model-config",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "지금 쓰는 모델과 사용량을 확인하고, 비용을 아끼는 방법을 3가지 알려 줘"
             }
@@ -192,6 +197,7 @@
               "file": "content/level2/permissions.md",
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/permission-modes",
+              "watch": true,
               "lastVerified": "2026-11-17",
               "prompt": "지금 적용 중인 권한 모드와 허용·거부 규칙을 정리해 줘"
             },
@@ -201,6 +207,7 @@
               "file": "content/level2/plan-mode.md",
               "minutes": 5,
               "docsUrl": "https://code.claude.com/docs/ko/permission-modes",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "/plan 이 폴더를 정리하는 계획을 세워 줘. 아직 아무것도 수정하지 마"
             },
@@ -243,6 +250,7 @@
               "file": "content/level2/settings-json.md",
               "minutes": 7,
               "docsUrl": "https://code.claude.com/docs/ko/settings",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "/status 로 지금 어떤 설정 파일이 적용되고 있는지 알려 줘"
             },
@@ -500,6 +508,7 @@
               "title": "Commands",
               "file": "content/reference/slash-commands.md",
               "docsUrl": "https://code.claude.com/docs/en/commands",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "generated": "node tools/build-reference.mjs"
             },
@@ -508,6 +517,7 @@
               "title": "CLI reference",
               "file": "content/reference/cli.md",
               "docsUrl": "https://code.claude.com/docs/en/cli-reference",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "generated": "node tools/build-cli-reference.mjs"
             },

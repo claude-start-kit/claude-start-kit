@@ -55,7 +55,7 @@
 | 자동 PR이 열림 | 변경된 레슨을 **직접 읽고 검토** 후 머지 → 자동 배포 |
 | `Detect doc changes` 실패 | 공식 문서 주소가 바뀌었을 수 있음 → `content/curriculum.json`의 `docsUrl` 수정 |
 | 레슨 직접 추가·수정 | `main`에 푸시하면 자동 배포 |
-| 새 문서를 감시 대상에 추가 | 레슨의 `docsUrl`을 넣고 `node tools/docs-sync.mjs --init` 실행 후 커밋 |
+| 새 문서를 감시 대상에 추가 | 레슨에 `docsUrl`을 넣고 `"watch": true`를 추가한 뒤 `node tools/docs-sync.mjs --init` 실행 후 커밋. **`"watch": true`인 레슨만 감시합니다** (비용과 검토량을 줄이기 위해 핵심 레슨만 지정: 설치·로그인·계정·권한·플랜 모드·설정·모델, 그리고 스크립트가 만드는 Commands·CLI 표) |
 
 ## 5. 비용·안전 장치
 - 워크플로는 **30분 제한**, Claude는 **최대 30턴**, 허용 도구는 읽기·수정뿐입니다 (터미널 명령 없음)
