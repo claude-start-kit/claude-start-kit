@@ -12,6 +12,10 @@ irm https://claude.ai/install.ps1 | iex
 
 > CMD(명령 프롬프트)를 쓴다면 명령이 다릅니다. PowerShell 명령을 CMD에 넣으면 오류가 납니다.
 
+```
+curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+```
+
 > Claude 다운로드 명령어는 자주 바뀝니다. [Claude Code 공식 문서](https://code.claude.com/docs/en/overview)의 **Windows PowerShell** 명령어를 참고하세요.
 
 ## 설치 확인
