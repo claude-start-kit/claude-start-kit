@@ -130,7 +130,7 @@
       <div class="box">
         <h4>내 진행도</h4>
         <div class="ring-row">${ring(p.pct)}<div><strong>${p.n} / ${p.total}</strong> 레슨 완료<br><span class="muted">${esc(lv.title)}</span></div></div>
-        <p class="muted save-note">진행률은 <strong>이 브라우저에만 저장</strong>됩니다. 다른 기기나 브라우저, 시크릿 창에서는 이어지지 않아요.</p>
+        <p class="muted save-note">진행률은 <strong>이 브라우저에만 저장</strong>됩니다.</p>
       </div>`];
 
     if (lesson) {
