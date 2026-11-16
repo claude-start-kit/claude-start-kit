@@ -163,6 +163,7 @@
               "file": "content/level2/context-tokens.md",
               "minutes": 6,
               "docsUrl": "https://code.claude.com/docs/ko/context-window",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "/context 를 보고 지금 무엇이 컨텍스트를 가장 많이 차지하는지 설명해 줘"
             },
@@ -241,6 +242,7 @@
               "file": "content/level2/init-claudemd.md",
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/memory",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "/init 으로 이 폴더의 CLAUDE.md를 만들고, 내용을 한국어로 설명해 줘"
             },
@@ -317,6 +319,7 @@
               "file": "content/level2/mcp.md",
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/mcp",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "/mcp 로 지금 연결된 서버가 있는지 알려 줘"
             },
@@ -326,6 +329,7 @@
               "file": "content/level2/subagents.md",
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/sub-agents",
+              "watch": true,
               "lastVerified": "2026-11-14",
               "prompt": "코드 검토 전용 서브에이전트를 만들어 줘. 파일 읽기만 가능하게"
             }

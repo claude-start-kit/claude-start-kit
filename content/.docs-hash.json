@@ -6,5 +6,9 @@
   "https://code.claude.com/docs/ko/permission-modes": "148a2a0ee82b0cf811d600b4ef6addc94f9ba39144c51f4f265ffa7ab23739b3",
   "https://code.claude.com/docs/ko/settings": "5637c90f71a38f2fdcb03175c7ef7737de9fc87ec2decbf731d1410cf57e22f6",
   "https://code.claude.com/docs/en/commands": "a011a8fdebcb1c0c29a810fb46361954c9aac8c66ec1d5552852059d4e062fbc",
-  "https://code.claude.com/docs/en/cli-reference": "5f65dda805f72d2ded0c55f7a7f098b093f278ea0c013382dbd7cc563392b682"
+  "https://code.claude.com/docs/en/cli-reference": "5f65dda805f72d2ded0c55f7a7f098b093f278ea0c013382dbd7cc563392b682",
+  "https://code.claude.com/docs/ko/context-window": "8777d4d8d58aa0d2bbaa5e2ab189bea722ca2cadf64a0c46e0d6cc37c2a26bee",
+  "https://code.claude.com/docs/ko/memory": "bfe93333ab64f955be036a97bda5e981d1016802da940dcba3427bc2783ebf0a",
+  "https://code.claude.com/docs/ko/mcp": "4aaa3a17934c18018ce15485f06ae92bf18ffa8cfd0a0d5a05531080ad6b1807",
+  "https://code.claude.com/docs/ko/sub-agents": "97586ed4e931d1387983dd8246c90856e9ea64aab38546617c2eda0c8254c2e0"
 }
