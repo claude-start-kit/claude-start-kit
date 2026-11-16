@@ -9,8 +9,8 @@ changed.json
 CLAUDE.local.md
 
 # 이 프로젝트와 무관한 개인 작업 폴더 (공개 저장소에 올리지 않음)
-reference/
-practice/
+/reference/
+/practice/
 
 # 기타
 node_modules/
