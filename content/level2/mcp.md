@@ -25,7 +25,7 @@ claude mcp add --transport stdio airtable --env AIRTABLE_API_KEY=내키 -- npx -
 | `claude mcp login 이름` | 로그인(OAuth) |
 | `/mcp` (세션 안) | 상태 확인 · 인증 · 켜고 끄기 |
 
-`/mcp`에서 상태는 **Connected / Needs authentication / Failed to connect** 로 표시됩니다.
+`claude mcp list`는 서버마다 상태를 **Connected / Needs authentication / Failed to connect** 로 보여 줍니다.
 
 ## 범위(scope)
 | 범위 | 옵션 | 저장 위치 | 공유 |
