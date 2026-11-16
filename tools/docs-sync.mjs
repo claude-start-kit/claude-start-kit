@@ -33,7 +33,7 @@ async function get(url) {
 }
 
 const byUrl = new Map(); // 같은 문서를 여러 레슨이 쓰면 한 번만 가져옴
-const result = { checkedAt: new Date().toISOString().slice(0, 10), changed: [], failed: [], hashes: {} };
+const result = { checkedAt: new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" }), changed: [], failed: [], hashes: {} };
 
 for (const t of targets) {
   try {

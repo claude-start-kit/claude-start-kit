@@ -1,6 +1,6 @@
 {
   "siteTitle": "Claude Code 학습 키트",
-  "lastDocsCheck": "2026-11-16",
+  "lastDocsCheck": "2026-11-17",
   "levels": [
     {
       "id": "level1",
@@ -37,7 +37,7 @@
               "minutes": 5,
               "docsUrl": "https://code.claude.com/docs/ko/setup",
               "watch": true,
-              "lastVerified": "2026-11-16",
+              "lastVerified": "2026-11-17",
               "prompt": "claude doctor 를 실행해서 설치 상태에 문제가 없는지 알려 줘"
             },
             {

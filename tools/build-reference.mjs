@@ -55,7 +55,7 @@ for (const line of text.split("\n")) {
 }
 
 // ---- 페이지 생성 ----
-const now = new Date(); const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`; // 로컬(한국) 날짜
+const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Seoul" }); // 한국 시간 기준 날짜 (서버가 UTC여도 같은 날짜)
 const esc = (s) => s.replace(/\|/g, "\\|");
 const missing = [];
 const byCat = new Map(CATS.map(([id]) => [id, []]));
