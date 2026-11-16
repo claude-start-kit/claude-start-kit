@@ -52,6 +52,10 @@ code { font-family: Consolas, "Courier New", monospace; }
 @media (min-width: 1480px) {
   .back-btn { position: fixed; top: 78px; left: calc(50vw - 728px); margin: 0; z-index: 30; background: var(--bg, #0d1017); }
 }
+/* 모바일: 브라우저·휴대폰 자체 뒤로가기를 쓰므로 이 버튼은 숨겨 상단바 비율을 지킴 */
+@media (max-width: 720px) {
+  .back-btn { display: none; }
+}
 .brand { margin-right: auto; font-weight: 800; text-decoration: none; color: var(--fg); letter-spacing: -0.02em; }
 .brand::before { content: "◆ "; color: var(--accent); }
 .topbar nav a { color: var(--muted); text-decoration: none; margin-left: 16px; font-size: 14px; }
