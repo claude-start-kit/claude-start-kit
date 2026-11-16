@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+# main 브랜치에 변경이 올라가면 자동 배포합니다. 수동 실행도 가능합니다.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 깨진 이미지·링크가 있으면 배포하지 않습니다.
+      - name: Check content
+        run: node tools/check-content.mjs
+
+      # 배포에 필요한 파일만 모읍니다 (도구·내부 파일 제외)
+      - name: Build site folder
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp -r assets content _site/
+          rm -f _site/content/.docs-hash.json
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

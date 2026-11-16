@@ -1,0 +1,21 @@
+# 자동 업데이트 도구가 만드는 임시 파일
+.docs-snapshots/
+changed.json
+
+# 비밀 값·개인 설정 (절대 올리지 않기)
+.env
+.env.*
+.claude/settings.local.json
+CLAUDE.local.md
+
+# 이 프로젝트와 무관한 개인 작업 폴더 (공개 저장소에 올리지 않음)
+reference/
+practice/
+
+# 기타
+node_modules/
+_site/
+Thumbs.db
+
+# 내부 일정표 (공개 저장소에 올리지 않음)
+docs/ROADMAP.md

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker></defs>
+  <rect width="760" height="320" rx="16" fill="#151922"/>
+  <text x="24" y="34" fill="#ff8a5c" font-size="15" font-weight="700">모델 고르기 — 작업에 맞춰 바꾸면 속도와 비용이 달라집니다</text>
+  <g font-size="14" text-anchor="middle">
+    <rect x="24" y="56" width="216" height="130" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="132" y="86" fill="#e6e9f2" font-weight="700" font-size="17">haiku</text><text x="132" y="112" fill="#8b93a7" font-size="12">가볍고 빠름</text><text x="132" y="134" fill="#8b93a7" font-size="12">단순 정리 · 반복 작업</text><text x="132" y="164" fill="#4ade80" font-size="12">비용 낮음</text>
+
+    <rect x="272" y="56" width="216" height="130" rx="14" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="380" y="86" fill="#ffd9c8" font-weight="700" font-size="17">sonnet</text><text x="380" y="112" fill="#c9a18d" font-size="12">균형형</text><text x="380" y="134" fill="#c9a18d" font-size="12">일상 작업의 기본 선택</text><text x="380" y="164" fill="#ffd9c8" font-size="12">비용 보통</text>
+
+    <rect x="520" y="56" width="216" height="130" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="628" y="86" fill="#e6e9f2" font-weight="700" font-size="17">opus</text><text x="628" y="112" fill="#8b93a7" font-size="12">가장 강력</text><text x="628" y="134" fill="#8b93a7" font-size="12">복잡한 설계 · 어려운 문제</text><text x="628" y="164" fill="#f1a1a1" font-size="12">비용 높음</text>
+  </g>
+  <rect x="24" y="206" width="712" height="46" rx="12" fill="#222838" stroke="#343c52"/>
+  <text x="44" y="234" fill="#e6e9f2" font-size="14"><tspan fill="#ffd9c8" font-family="Consolas,monospace" font-weight="700">opusplan</tspan>  계획은 opus, 실행은 sonnet — 둘의 장점을 함께 씁니다</text>
+  <g font-size="13" fill="#e6e9f2">
+    <text x="24" y="282"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/model</tspan> 선택기 열기</text>
+    <text x="250" y="282"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/model sonnet</tspan> 바로 전환</text>
+    <text x="500" y="282"><tspan fill="#ffd9c8" font-family="Consolas,monospace">claude --model haiku</tspan> 시작할 때 지정</text>
+  </g>
+  <text x="24" y="304" fill="#8b93a7" font-size="12">기본 모델은 플랜·환경에 따라 다릅니다. /model 에서 현재 상태를 확인하세요.</text>
+</svg>

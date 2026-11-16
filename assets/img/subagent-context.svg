@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4ade80"/></marker>
+  </defs>
+  <rect width="760" height="320" rx="16" fill="#151922"/>
+  <g font-size="14" text-anchor="middle">
+    <rect x="24" y="40" width="250" height="240" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="149" y="68" fill="#e6e9f2" font-weight="700">메인 대화</text>
+    <text x="149" y="90" fill="#8b93a7" font-size="12">깨끗하게 유지됩니다</text>
+    <rect x="44" y="110" width="210" height="40" rx="8" fill="#2b3246"/><text x="149" y="135" fill="#e6e9f2" font-size="13">"로그 분석해 줘"</text>
+    <rect x="44" y="214" width="210" height="46" rx="8" fill="#14281d" stroke="#4ade80"/><text x="149" y="242" fill="#bdf5d0" font-size="13">요약 3줄만 도착</text>
+
+    <rect x="486" y="40" width="250" height="240" rx="14" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="611" y="68" fill="#ffd9c8" font-weight="700">서브에이전트</text>
+    <text x="611" y="90" fill="#c9a18d" font-size="12">자기만의 컨텍스트·도구·모델</text>
+    <rect x="506" y="110" width="210" height="40" rx="8" fill="#3a2a22"/><text x="611" y="135" fill="#ffd9c8" font-size="13">파일 수십 개 읽기</text>
+    <rect x="506" y="160" width="210" height="40" rx="8" fill="#3a2a22"/><text x="611" y="185" fill="#ffd9c8" font-size="13">검색·분석 반복</text>
+  </g>
+  <path d="M276 130H484" stroke="#ff8a5c" stroke-width="2" marker-end="url(#o)"/>
+  <path d="M484 238H276" stroke="#4ade80" stroke-width="2" marker-end="url(#g)"/>
+  <text x="380" y="122" fill="#ff8a5c" font-size="12" text-anchor="middle">일 맡기기</text>
+  <text x="380" y="262" fill="#4ade80" font-size="12" text-anchor="middle">결과 요약만 반환</text>
+</svg>

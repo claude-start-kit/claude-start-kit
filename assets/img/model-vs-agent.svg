@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8b93a7"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+  </defs>
+  <rect width="760" height="360" rx="16" fill="#151922"/>
+
+  <text x="24" y="38" fill="#8b93a7" font-size="15" font-weight="700">AI 모델 (채팅)</text>
+  <g font-size="14" text-anchor="middle">
+    <rect x="24" y="52" width="150" height="64" rx="12" fill="#222838" stroke="#343c52"/><text x="99" y="90" fill="#e6e9f2">질문</text>
+    <rect x="305" y="52" width="150" height="64" rx="12" fill="#222838" stroke="#343c52"/><text x="380" y="90" fill="#e6e9f2">글로 된 답변</text>
+    <rect x="586" y="52" width="150" height="64" rx="12" fill="#222838" stroke="#343c52"/><text x="661" y="82" fill="#e6e9f2">답변 보고</text><text x="661" y="102" fill="#e6e9f2">사람이 직접 작업</text>
+  </g>
+  <path d="M176 84H303" stroke="#8b93a7" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M457 84H584" stroke="#8b93a7" stroke-width="2" marker-end="url(#a)"/>
+
+  <line x1="24" y1="148" x2="736" y2="148" stroke="#2b3246" stroke-dasharray="4 6"/>
+
+  <text x="24" y="184" fill="#ff8a5c" font-size="15" font-weight="700">AI 에이전트 (Claude Code)</text>
+  <g font-size="14" text-anchor="middle">
+    <rect x="24" y="204" width="120" height="64" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/><text x="84" y="242" fill="#ffd9c8">요청</text>
+    <rect x="168" y="204" width="120" height="64" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/><text x="228" y="242" fill="#ffd9c8">파일 읽기</text>
+    <rect x="312" y="204" width="120" height="64" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/><text x="372" y="242" fill="#ffd9c8">수정</text>
+    <rect x="456" y="204" width="120" height="64" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/><text x="516" y="242" fill="#ffd9c8">실행</text>
+    <rect x="600" y="204" width="120" height="64" rx="12" fill="#17291f" stroke="#7ee2a8"/><text x="660" y="242" fill="#bff5d8">작업 완료</text>
+  </g>
+  <path d="M146 236H166" stroke="#ff8a5c" stroke-width="2" marker-end="url(#o)"/>
+  <path d="M290 236H310" stroke="#ff8a5c" stroke-width="2" marker-end="url(#o)"/>
+  <path d="M434 236H454" stroke="#ff8a5c" stroke-width="2" marker-end="url(#o)"/>
+  <path d="M578 236H598" stroke="#ff8a5c" stroke-width="2" marker-end="url(#o)"/>
+  <path d="M516 270V318H372H228V270" fill="none" stroke="#ff8a5c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#o)"/>
+  <text x="372" y="340" text-anchor="middle" fill="#ff8a5c" font-size="13">오류가 있으면 스스로 다시 시도</text>
+</svg>

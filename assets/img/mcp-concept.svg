@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+  </defs>
+  <rect width="760" height="300" rx="16" fill="#151922"/>
+  <g font-size="14" text-anchor="middle">
+    <rect x="24" y="100" width="170" height="100" rx="14" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="109" y="142" fill="#ffd9c8" font-weight="700">Claude Code</text><text x="109" y="166" fill="#c9a18d" font-size="12">내 PC의 에이전트</text>
+
+    <rect x="290" y="100" width="170" height="100" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="375" y="142" fill="#e6e9f2" font-weight="700">MCP 서버</text><text x="375" y="166" fill="#8b93a7" font-size="12">연결 규격(어댑터)</text>
+
+    <rect x="560" y="40" width="176" height="56" rx="12" fill="#222838" stroke="#343c52"/><text x="648" y="74" fill="#e6e9f2">Notion · 문서</text>
+    <rect x="560" y="122" width="176" height="56" rx="12" fill="#222838" stroke="#343c52"/><text x="648" y="156" fill="#e6e9f2">GitHub · 코드</text>
+    <rect x="560" y="204" width="176" height="56" rx="12" fill="#222838" stroke="#343c52"/><text x="648" y="238" fill="#e6e9f2">데이터베이스</text>
+  </g>
+  <path d="M196 150H288" stroke="#ff8a5c" stroke-width="2" marker-start="url(#o)" marker-end="url(#o)"/>
+  <path d="M462 135L558 70M462 150H558M462 165L558 232" stroke="#8b93a7" stroke-width="2" fill="none"/>
+  <text x="375" y="250" fill="#8b93a7" font-size="13" text-anchor="middle">서버 하나를 연결하면 Claude가 그 도구를 직접 쓸 수 있습니다</text>
+</svg>

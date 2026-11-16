@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <rect width="760" height="330" rx="16" fill="#151922"/>
+  <text x="24" y="36" fill="#ff8a5c" font-size="15" font-weight="700">CLAUDE.md는 여러 곳에 둘 수 있고, 모두 합쳐서 읽습니다</text>
+  <g font-size="14">
+    <rect x="24" y="52" width="712" height="52" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="76" fill="#e6e9f2" font-weight="700">① 관리형 (회사 IT가 배포)</text><text x="44" y="95" fill="#8b93a7" font-size="12" font-family="Consolas,monospace">C:\Program Files\ClaudeCode\CLAUDE.md</text>
+
+    <rect x="24" y="112" width="712" height="52" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="136" fill="#e6e9f2" font-weight="700">② 사용자 (내 모든 프로젝트에 적용)</text><text x="44" y="155" fill="#8b93a7" font-size="12" font-family="Consolas,monospace">%USERPROFILE%\.claude\CLAUDE.md</text>
+
+    <rect x="24" y="172" width="712" height="52" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="44" y="196" fill="#ffd9c8" font-weight="700">③ 프로젝트 (팀과 공유 · git에 커밋)  ← 가장 많이 씀</text><text x="44" y="215" fill="#c9a18d" font-size="12" font-family="Consolas,monospace">.\CLAUDE.md  또는  .\.claude\CLAUDE.md</text>
+
+    <rect x="24" y="232" width="712" height="52" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="256" fill="#e6e9f2" font-weight="700">④ 로컬 (나만 · git 제외 권장)</text><text x="44" y="275" fill="#8b93a7" font-size="12" font-family="Consolas,monospace">.\CLAUDE.local.md</text>
+  </g>
+  <text x="380" y="312" fill="#8b93a7" font-size="13" text-anchor="middle">/init 은 ③ 프로젝트 파일을 자동으로 만들어 줍니다</text>
+</svg>

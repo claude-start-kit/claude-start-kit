@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+  </defs>
+  <rect width="760" height="330" rx="16" fill="#151922"/>
+  <text x="24" y="36" fill="#ff8a5c" font-size="15" font-weight="700">settings.json — 위에 있을수록 우선순위가 높습니다</text>
+  <g font-size="14">
+    <rect x="24" y="52" width="620" height="50" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="73" fill="#e6e9f2" font-weight="700">관리형 (회사 정책)</text><text x="44" y="92" fill="#8b93a7" font-size="12" font-family="Consolas,monospace">C:\Program Files\ClaudeCode\managed-settings.json</text>
+
+    <rect x="24" y="110" width="620" height="50" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="131" fill="#e6e9f2" font-weight="700">명령줄 --settings</text><text x="44" y="150" fill="#8b93a7" font-size="12">실행할 때만 한시적으로 적용</text>
+
+    <rect x="24" y="168" width="620" height="50" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="189" fill="#e6e9f2" font-weight="700">프로젝트 로컬 (나만 · git 제외)</text><text x="44" y="208" fill="#8b93a7" font-size="12" font-family="Consolas,monospace">.\.claude\settings.local.json</text>
+
+    <rect x="24" y="226" width="620" height="50" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="44" y="247" fill="#ffd9c8" font-weight="700">공유 프로젝트 (팀 공통 · git 커밋)</text><text x="44" y="266" fill="#c9a18d" font-size="12" font-family="Consolas,monospace">.\.claude\settings.json</text>
+
+    <rect x="24" y="284" width="620" height="40" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="44" y="309" fill="#e6e9f2" font-weight="700">사용자  <tspan fill="#8b93a7" font-size="12" font-family="Consolas,monospace">%USERPROFILE%\.claude\settings.json</tspan></text>
+  </g>
+  <path d="M700 290V62" stroke="#ff8a5c" stroke-width="2" fill="none" marker-end="url(#o)"/>
+  <text x="700" y="320" fill="#ff8a5c" font-size="12" text-anchor="middle">우선순위</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+  </defs>
+  <rect width="760" height="330" rx="16" fill="#151922"/>
+
+  <!-- 위쪽 라벨 -->
+  <g font-size="14" text-anchor="middle" fill="#e6e9f2">
+    <text x="165" y="34" font-weight="700">현재 폴더</text><text x="165" y="54" fill="#8b93a7" font-size="13">지금 있는 위치</text>
+    <text x="291" y="34" font-weight="700">명령어</text><text x="291" y="54" fill="#8b93a7" font-size="13">내가 입력한 글자</text>
+  </g>
+
+  <!-- 창 -->
+  <rect x="40" y="80" width="680" height="190" rx="12" fill="#0b0e14" stroke="#343c52"/>
+  <rect x="40" y="80" width="680" height="32" rx="12" fill="#222838"/>
+  <rect x="52" y="90" width="14" height="12" rx="2" fill="#2f3a52" stroke="#8b93a7"/><text x="54" y="100" fill="#c9d1e3" font-size="9" font-family="Consolas,monospace" font-weight="700">&gt;_</text>
+  <text x="76" y="101" fill="#c9d1e3" font-size="13">Windows PowerShell</text>
+  <g stroke="#c9d1e3" stroke-width="1.3" fill="none"><path d="M628 96H638"/><rect x="662" y="91" width="9" height="9"/><path d="M690 91L699 100M699 91L690 100"/></g>
+  <g font-family="Consolas,'Courier New',monospace" font-size="16">
+    <text x="64" y="146" fill="#7ee2a8">PS C:\Users\me\project&gt;</text>
+    <text x="275" y="146" fill="#ffd9c8">dir</text>
+    <text x="64" y="186" fill="#c9d1e3">2026-11-14  notes.md</text>
+    <text x="64" y="210" fill="#c9d1e3">2026-11-14  report.xlsx</text>
+    <text x="64" y="244" fill="#7ee2a8">PS C:\Users\me\project&gt;</text>
+    <rect x="276" y="230" width="9" height="18" fill="#ff8a5c"/>
+  </g>
+
+  <!-- 위쪽 화살표 (창 위에 그림) -->
+  <path d="M165 66V130" stroke="#ff8a5c" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M291 66V130" stroke="#ff8a5c" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- 결과: 오른쪽에서 왼쪽으로 -->
+  <path d="M470 198H300" stroke="#ff8a5c" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <g font-size="14" fill="#e6e9f2">
+    <text x="486" y="194" font-weight="700">결과</text>
+    <text x="486" y="214" fill="#8b93a7" font-size="13">컴퓨터의 응답</text>
+  </g>
+  <text x="380" y="304" fill="#8b93a7" font-size="13" text-anchor="middle">"위치 → 명령 → 응답" 이 터미널의 기본 한 사이클입니다.</text>
+</svg>

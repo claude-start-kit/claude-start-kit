@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <rect width="760" height="310" rx="16" fill="#151922"/>
+  <text x="24" y="34" fill="#ff8a5c" font-size="15" font-weight="700">되돌리기 안전망은 두 겹입니다</text>
+  <g font-size="14">
+    <rect x="24" y="52" width="350" height="200" rx="14" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="44" y="82" fill="#ffd9c8" font-size="17" font-weight="700">/rewind  (또는 Esc 두 번)</text>
+    <text x="44" y="108" fill="#c9a18d" font-size="12">Claude Code 안의 체크포인트</text>
+    <text x="44" y="140" fill="#e6e9f2">✔ Claude가 파일 도구로 고친 것</text>
+    <text x="44" y="164" fill="#e6e9f2">✔ 방금 전으로 코드·대화 복원</text>
+    <text x="44" y="196" fill="#f1a1a1">✘ bash 명령으로만 바뀐 파일</text>
+    <text x="44" y="220" fill="#f1a1a1">✘ Claude 밖에서 내가 고친 것</text>
+
+    <rect x="386" y="52" width="350" height="200" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="406" y="82" fill="#e6e9f2" font-size="17" font-weight="700">git  (commit)</text>
+    <text x="406" y="108" fill="#8b93a7" font-size="12">내가 남기는 영구 기록</text>
+    <text x="406" y="140" fill="#e6e9f2">✔ 원하는 시점을 이름 붙여 저장</text>
+    <text x="406" y="164" fill="#e6e9f2">✔ 며칠 뒤에도 비교·복구 가능</text>
+    <text x="406" y="196" fill="#e6e9f2">✔ 팀과 공유</text>
+    <text x="406" y="220" fill="#8b93a7">단, 커밋해 둔 것만 복구됩니다</text>
+  </g>
+  <text x="380" y="285" fill="#8b93a7" font-size="13" text-anchor="middle">큰 작업 전에는 먼저 commit — rewind는 "빠른 실행 취소", git은 "진짜 저장"</text>
+</svg>

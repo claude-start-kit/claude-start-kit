@@ -1,0 +1,572 @@
+{
+  "siteTitle": "Claude Code 학습 키트",
+  "lastDocsCheck": "2026-11-17",
+  "levels": [
+    {
+      "id": "level1",
+      "title": "1단계 · 최소 시작",
+      "summary": "설치와 첫 실행에 필요한 것만. 약 20분",
+      "categories": [
+        {
+          "id": "start",
+          "title": "시작하기",
+          "lessons": [
+            {
+              "id": "what-is-claude-code",
+              "title": "Claude Code란?",
+              "file": "content/level1/what-is-claude-code.md",
+              "minutes": 3,
+              "docsUrl": "https://code.claude.com/docs/ko/quickstart",
+              "lastVerified": "2026-11-14",
+              "prompt": "AI 챗봇과 Claude Code의 차이를 비전공자도 이해하게 예시 3개로 설명해 줘"
+            },
+            {
+              "id": "plans-accounts",
+              "title": "요금·계정 준비",
+              "file": "content/level1/plans-accounts.md",
+              "minutes": 3,
+              "docsUrl": "https://code.claude.com/docs/en/authentication",
+              "lastVerified": "2026-11-14",
+              "prompt": "/status 로 지금 내가 어떤 방식으로 로그인되어 있는지 알려 줘"
+            },
+            {
+              "id": "install-windows",
+              "title": "Windows에 설치하기",
+              "file": "content/level1/install-windows.md",
+              "minutes": 5,
+              "docsUrl": "https://code.claude.com/docs/ko/setup",
+              "lastVerified": "2026-11-14",
+              "prompt": "claude doctor 를 실행해서 설치 상태에 문제가 없는지 알려 줘"
+            },
+            {
+              "id": "login-first-run",
+              "title": "로그인과 첫 실행",
+              "file": "content/level1/login-first-run.md",
+              "minutes": 4,
+              "docsUrl": "https://code.claude.com/docs/ko/quickstart",
+              "lastVerified": "2026-11-14",
+              "prompt": "지금 작업 폴더가 어디인지, 어떤 모델을 쓰고 있는지 알려 줘"
+            },
+            {
+              "id": "first-request",
+              "title": "첫 요청 해보기",
+              "file": "content/level1/first-request.md",
+              "minutes": 5,
+              "docsUrl": "https://code.claude.com/docs/ko/quickstart",
+              "lastVerified": "2026-11-14",
+              "prompt": "이 폴더에 어떤 파일이 있는지 보고, 가장 최근에 바뀐 파일을 알려 줘"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level2",
+      "title": "2단계 · 똑똑하게 쓰기",
+      "summary": "기초 → 잘 시키기 → 안전하게 맡기기 → 내 프로젝트에 맞추기 → git → 확장",
+      "categories": [
+        {
+          "id": "basics",
+          "title": "A. 기초 다지기",
+          "lessons": [
+            {
+              "id": "terminal",
+              "title": "터미널이란",
+              "file": "content/level2/terminal.md",
+              "minutes": 5,
+              "docsUrl": "",
+              "lastVerified": "2026-11-17",
+              "prompt": "지금 내가 있는 폴더가 어디인지, 안에 무슨 파일이 있는지 알려 줘"
+            },
+            {
+              "id": "powershell-basics",
+              "title": "PowerShell 기본 명령",
+              "file": "content/level2/powershell-basics.md",
+              "minutes": 7,
+              "docsUrl": "",
+              "lastVerified": "2026-11-14",
+              "prompt": "notes-project 폴더를 만들고 memo.txt 파일에 '회의 메모'라고 써 줘"
+            },
+            {
+              "id": "read-docs",
+              "title": "공식 문서 보는 법",
+              "file": "content/level2/read-docs.md",
+              "minutes": 4,
+              "docsUrl": "https://code.claude.com/docs/ko/quickstart",
+              "lastVerified": "2026-11-14",
+              "prompt": "Claude Code 변경 이력(changelog)에서 최근 눈에 띄는 변경을 3개 알려 줘"
+            }
+          ]
+        },
+        {
+          "id": "env",
+          "title": "B. 작업 환경",
+          "lessons": [
+            {
+              "id": "project-folder",
+              "title": "프로젝트 폴더 만들기",
+              "file": "content/level2/project-folder.md",
+              "minutes": 4,
+              "docsUrl": "",
+              "lastVerified": "2026-11-17",
+              "prompt": "지금 폴더가 프로젝트 폴더로 적당한지, 안에 어떤 파일들이 있는지 알려 줘"
+            },
+            {
+              "id": "model-choice",
+              "title": "모델 고르기",
+              "file": "content/level2/model-choice.md",
+              "minutes": 4,
+              "docsUrl": "https://code.claude.com/docs/ko/model-config",
+              "lastVerified": "2026-11-16",
+              "prompt": "지금 어떤 모델을 쓰고 있는지 알려 주고, Haiku · Sonnet · Opus 차이를 두 줄로 설명해 줘"
+            },
+            {
+              "id": "git-install",
+              "title": "git 설치",
+              "file": "content/level2/git-install.md",
+              "minutes": 5,
+              "docsUrl": "https://git-scm.com/book/ko/v2",
+              "lastVerified": "2026-11-14",
+              "prompt": "git이 제대로 설치됐는지 확인하고, user.name과 user.email이 설정됐는지 알려 줘"
+            },
+            {
+              "id": "ide-setup",
+              "title": "VS Code 설치 & 세팅",
+              "file": "content/level2/ide-setup.md",
+              "minutes": 6,
+              "docsUrl": "https://code.claude.com/docs/ko/vs-code",
+              "lastVerified": "2026-11-17",
+              "prompt": "지금 열려 있는 작업 폴더가 어디인지 알려 줘"
+            }
+          ]
+        },
+        {
+          "id": "ask",
+          "title": "C. 잘 시키기",
+          "lessons": [
+            {
+              "id": "prompting",
+              "title": "잘 시키는 법",
+              "file": "content/level2/prompting.md",
+              "minutes": 7,
+              "docsUrl": "https://code.claude.com/docs/ko/best-practices",
+              "lastVerified": "2026-11-14",
+              "prompt": "이 폴더에서 가장 큰 파일 3개를 찾고, 각각 무엇인지 한 줄로 설명해 줘. 끝나면 확인한 방법도 알려 줘"
+            },
+            {
+              "id": "context-tokens",
+              "title": "컨텍스트와 토큰",
+              "file": "content/level2/context-tokens.md",
+              "minutes": 6,
+              "docsUrl": "https://code.claude.com/docs/ko/context-window",
+              "lastVerified": "2026-11-14",
+              "prompt": "/context 를 보고 지금 무엇이 컨텍스트를 가장 많이 차지하는지 설명해 줘"
+            },
+            {
+              "id": "session-resume",
+              "title": "대화 이어하기 (/rename · /resume)",
+              "file": "content/level2/session-resume.md",
+              "minutes": 6,
+              "docsUrl": "https://code.claude.com/docs/en/sessions",
+              "lastVerified": "2026-11-17",
+              "prompt": "/status 결과를 보고 지금 쓰는 모델과 계정을 알려 줘"
+            },
+            {
+              "id": "model-cost",
+              "title": "모델 선택과 비용 확인",
+              "file": "content/level2/model-cost.md",
+              "minutes": 6,
+              "docsUrl": "https://code.claude.com/docs/ko/model-config",
+              "lastVerified": "2026-11-14",
+              "prompt": "지금 쓰는 모델과 사용량을 확인하고, 비용을 아끼는 방법을 3가지 알려 줘"
+            }
+          ]
+        },
+        {
+          "id": "safe",
+          "title": "D. 안전하게 맡기기",
+          "lessons": [
+            {
+              "id": "permissions",
+              "title": "권한 모드와 /permissions",
+              "file": "content/level2/permissions.md",
+              "minutes": 8,
+              "docsUrl": "https://code.claude.com/docs/ko/permission-modes",
+              "lastVerified": "2026-11-17",
+              "prompt": "지금 적용 중인 권한 모드와 허용·거부 규칙을 정리해 줘"
+            },
+            {
+              "id": "plan-mode",
+              "title": "플랜 모드",
+              "file": "content/level2/plan-mode.md",
+              "minutes": 5,
+              "docsUrl": "https://code.claude.com/docs/ko/permission-modes",
+              "lastVerified": "2026-11-14",
+              "prompt": "/plan 이 폴더를 정리하는 계획을 세워 줘. 아직 아무것도 수정하지 마"
+            },
+            {
+              "id": "rewind",
+              "title": "되돌리기 (/rewind)",
+              "file": "content/level2/rewind.md",
+              "minutes": 5,
+              "docsUrl": "https://code.claude.com/docs/ko/checkpointing",
+              "lastVerified": "2026-11-17",
+              "prompt": "rewind 로 되돌릴 수 있는 것과 없는 것을 예시로 설명해 줘"
+            }
+          ]
+        },
+        {
+          "id": "customize",
+          "title": "E. 내 프로젝트에 맞추기",
+          "lessons": [
+            {
+              "id": "markdown-basics",
+              "title": "마크다운(.md) 파일이란",
+              "file": "content/level2/markdown-basics.md",
+              "minutes": 5,
+              "docsUrl": "",
+              "lastVerified": "2026-11-17",
+              "prompt": "notes.md 파일을 만들고, 오늘 할 일 3개를 제목과 목록으로 적어 줘"
+            },
+            {
+              "id": "init-claudemd",
+              "title": "/init 과 CLAUDE.md",
+              "file": "content/level2/init-claudemd.md",
+              "minutes": 8,
+              "docsUrl": "https://code.claude.com/docs/ko/memory",
+              "lastVerified": "2026-11-14",
+              "prompt": "/init 으로 이 폴더의 CLAUDE.md를 만들고, 내용을 한국어로 설명해 줘"
+            },
+            {
+              "id": "settings-json",
+              "title": "설정 파일 (settings.json)",
+              "file": "content/level2/settings-json.md",
+              "minutes": 7,
+              "docsUrl": "https://code.claude.com/docs/ko/settings",
+              "lastVerified": "2026-11-14",
+              "prompt": "/status 로 지금 어떤 설정 파일이 적용되고 있는지 알려 줘"
+            },
+            {
+              "id": "statusline",
+              "title": "상태 표시줄 (/statusline)",
+              "file": "content/level2/statusline.md",
+              "minutes": 5,
+              "docsUrl": "https://code.claude.com/docs/ko/statusline",
+              "lastVerified": "2026-11-14",
+              "prompt": "/statusline 모델 이름, 현재 폴더, git 브랜치, 컨텍스트 사용률을 보여 줘"
+            },
+            {
+              "id": "slash-commands",
+              "title": "주요 슬래시 명령 모음",
+              "file": "content/level2/slash-commands.md",
+              "minutes": 6,
+              "docsUrl": "https://code.claude.com/docs/en/commands",
+              "lastVerified": "2026-11-14",
+              "prompt": "/help 에 나오는 명령 중 초보자에게 가장 유용한 5개를 골라 설명해 줘"
+            }
+          ]
+        },
+        {
+          "id": "git",
+          "title": "F. Git과 함께",
+          "lessons": [
+            {
+              "id": "git-basics",
+              "title": "git 기초",
+              "file": "content/level2/git-basics.md",
+              "minutes": 10,
+              "docsUrl": "https://git-scm.com/book/ko/v2",
+              "lastVerified": "2026-11-14",
+              "prompt": "git status 결과를 초보자도 이해하게 한 줄씩 설명해 줘"
+            },
+            {
+              "id": "git-with-claude",
+              "title": "Claude와 함께 git 쓰기",
+              "file": "content/level2/git-with-claude.md",
+              "minutes": 7,
+              "docsUrl": "https://code.claude.com/docs/en/common-workflows",
+              "lastVerified": "2026-11-14",
+              "prompt": "지금 바뀐 파일을 요약하고, 한국어 커밋 메시지를 제안만 해 줘. 커밋은 하지 마"
+            },
+            {
+              "id": "git-branch-worktree",
+              "title": "브랜치와 worktree",
+              "file": "content/level2/git-branch-worktree.md",
+              "minutes": 8,
+              "docsUrl": "https://code.claude.com/docs/en/worktrees",
+              "lastVerified": "2026-11-14",
+              "prompt": "브랜치와 worktree의 차이를 그림처럼 간단히 설명해 줘"
+            }
+          ]
+        },
+        {
+          "id": "extend",
+          "title": "G. 확장하기",
+          "lessons": [
+            {
+              "id": "mcp",
+              "title": "MCP로 외부 도구 연결",
+              "file": "content/level2/mcp.md",
+              "minutes": 8,
+              "docsUrl": "https://code.claude.com/docs/ko/mcp",
+              "lastVerified": "2026-11-14",
+              "prompt": "/mcp 로 지금 연결된 서버가 있는지 알려 줘"
+            },
+            {
+              "id": "subagents",
+              "title": "서브에이전트",
+              "file": "content/level2/subagents.md",
+              "minutes": 8,
+              "docsUrl": "https://code.claude.com/docs/ko/sub-agents",
+              "lastVerified": "2026-11-14",
+              "prompt": "코드 검토 전용 서브에이전트를 만들어 줘. 파일 읽기만 가능하게"
+            }
+          ]
+        },
+        {
+          "id": "practice",
+          "title": "H. 실전",
+          "lessons": [
+            {
+              "id": "mini-project",
+              "title": "회의록 정리기 만들기",
+              "file": "content/level2/mini-project.md",
+              "minutes": 15,
+              "docsUrl": "",
+              "lastVerified": "2026-11-14",
+              "prompt": "meeting.txt 를 읽고 결정사항, 담당자, 마감일을 표로 정리해 줘. 추정한 정보는 따로 표시해 줘"
+            },
+            {
+              "id": "faq",
+              "title": "막힐 때 FAQ",
+              "file": "content/level2/faq.md",
+              "minutes": 5,
+              "docsUrl": "https://code.claude.com/docs/ko/troubleshooting",
+              "lastVerified": "2026-11-14",
+              "prompt": "claude doctor 결과를 보고 문제가 있으면 해결 방법을 알려 줘"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level3",
+      "title": "3단계 · 심화 과정",
+      "summary": "자동화·확장·보안 운영까지, 공식 스펙을 폭넓게 익히는 단계 (배포 후 순서대로 공개)",
+      "categories": [
+        {
+          "id": "automation",
+          "title": "자동화",
+          "lessons": [
+            {
+              "id": "hooks",
+              "title": "훅(Hooks)",
+              "soon": true,
+              "summary": "특정 시점(파일 수정 후, 작업 종료 시 등)에 명령을 자동으로 실행합니다",
+              "docsUrl": "https://code.claude.com/docs/en/hooks-guide"
+            },
+            {
+              "id": "headless",
+              "title": "헤드리스 모드 (claude -p)",
+              "soon": true,
+              "summary": "화면 없이 한 번 실행하고 결과만 받아 스크립트·자동화에 연결합니다",
+              "docsUrl": "https://code.claude.com/docs/en/headless"
+            },
+            {
+              "id": "scheduled",
+              "title": "예약 작업",
+              "soon": true,
+              "summary": "정해진 시각이나 간격으로 Claude에게 일을 시킵니다",
+              "docsUrl": "https://code.claude.com/docs/en/scheduled-tasks"
+            },
+            {
+              "id": "github-actions",
+              "title": "GitHub Actions·CI 연동",
+              "soon": true,
+              "summary": "PR과 이슈 같은 저장소 작업에 Claude를 연결합니다",
+              "docsUrl": "https://code.claude.com/docs/en/github-actions"
+            }
+          ]
+        },
+        {
+          "id": "extend",
+          "title": "확장",
+          "lessons": [
+            {
+              "id": "skills",
+              "title": "스킬(Skills)과 커스텀 명령",
+              "soon": true,
+              "summary": "반복하는 작업 절차를 나만의 명령으로 만듭니다",
+              "docsUrl": "https://code.claude.com/docs/en/skills"
+            },
+            {
+              "id": "plugins",
+              "title": "플러그인",
+              "soon": true,
+              "summary": "스킬·훅·MCP·에이전트를 묶어 설치하고 공유합니다",
+              "docsUrl": "https://code.claude.com/docs/en/plugins/overview"
+            },
+            {
+              "id": "subagents-advanced",
+              "title": "서브에이전트 심화",
+              "soon": true,
+              "summary": "도구 제한, 모델 지정, 메모리, worktree 격리까지 다룹니다",
+              "docsUrl": "https://code.claude.com/docs/en/sub-agents"
+            },
+            {
+              "id": "agent-teams",
+              "title": "에이전트 팀",
+              "soon": true,
+              "summary": "여러 에이전트가 역할을 나눠 함께 일하게 합니다",
+              "docsUrl": "https://code.claude.com/docs/en/agent-teams"
+            }
+          ]
+        },
+        {
+          "id": "ops",
+          "title": "보안·운영",
+          "lessons": [
+            {
+              "id": "sandbox",
+              "title": "샌드박스",
+              "soon": true,
+              "summary": "Claude가 실행하는 명령이 닿는 파일·네트워크를 제한합니다",
+              "docsUrl": "https://code.claude.com/docs/en/sandboxing"
+            },
+            {
+              "id": "permissions-deep",
+              "title": "권한 규칙 심화",
+              "soon": true,
+              "summary": "allow·ask·deny 규칙의 문법과 우선순위를 익힙니다",
+              "docsUrl": "https://code.claude.com/docs/en/permissions"
+            },
+            {
+              "id": "managed-settings",
+              "title": "팀·조직 설정",
+              "soon": true,
+              "summary": "여러 사람이 같은 규칙으로 쓰도록 설정을 배포합니다",
+              "docsUrl": "https://code.claude.com/docs/en/settings"
+            },
+            {
+              "id": "env-keybindings",
+              "title": "환경 변수와 키 바인딩",
+              "soon": true,
+              "summary": "동작을 세밀하게 조정하고 단축키를 바꿉니다",
+              "docsUrl": "https://code.claude.com/docs/en/env-vars"
+            }
+          ]
+        },
+        {
+          "id": "dev",
+          "title": "개발자용",
+          "lessons": [
+            {
+              "id": "agent-sdk",
+              "title": "Agent SDK",
+              "soon": true,
+              "summary": "내 프로그램 안에서 Claude Code의 에이전트를 직접 실행합니다",
+              "docsUrl": "https://code.claude.com/docs/en/agent-sdk/overview"
+            },
+            {
+              "id": "output-styles",
+              "title": "출력 스타일",
+              "soon": true,
+              "summary": "Claude의 답변 방식과 말투를 목적에 맞게 바꿉니다",
+              "docsUrl": "https://code.claude.com/docs/en/output-styles"
+            },
+            {
+              "id": "model-config",
+              "title": "모델·노력도 설정 심화",
+              "soon": true,
+              "summary": "모델 별칭, 우선순위, 노력도를 상황에 맞게 설정합니다",
+              "docsUrl": "https://code.claude.com/docs/en/model-config"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ref",
+      "kind": "reference",
+      "title": "스펙 레퍼런스",
+      "summary": "이미 써 본 분을 위한 찾아보기용 모음. Claude Code · 터미널 · Git · 활용 순으로, 출처를 밝혀 정리합니다",
+      "categories": [
+        {
+          "id": "claude-code",
+          "title": "Claude Code",
+          "lessons": [
+            {
+              "id": "slash-all",
+              "title": "Commands",
+              "file": "content/reference/slash-commands.md",
+              "docsUrl": "https://code.claude.com/docs/en/commands",
+              "lastVerified": "2026-11-14",
+              "generated": "node tools/build-reference.mjs"
+            },
+            {
+              "id": "cli-all",
+              "title": "CLI reference",
+              "file": "content/reference/cli.md",
+              "docsUrl": "https://code.claude.com/docs/en/cli-reference",
+              "lastVerified": "2026-11-14",
+              "generated": "node tools/build-cli-reference.mjs"
+            },
+            {
+              "id": "mcp",
+              "title": "MCP 참고",
+              "file": "content/reference/mcp.md",
+              "docsUrl": "https://code.claude.com/docs/en/mcp",
+              "lastVerified": "2026-11-14"
+            },
+            {
+              "id": "subagents",
+              "title": "서브에이전트 참고",
+              "file": "content/reference/subagents.md",
+              "docsUrl": "https://code.claude.com/docs/en/sub-agents",
+              "lastVerified": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "terminal",
+          "title": "터미널",
+          "lessons": [
+            {
+              "id": "powershell",
+              "title": "PowerShell 명령",
+              "file": "content/reference/powershell.md",
+              "docsUrl": "https://learn.microsoft.com/powershell/",
+              "lastVerified": "2026-11-17"
+            }
+          ]
+        },
+        {
+          "id": "git",
+          "title": "Git",
+          "lessons": [
+            {
+              "id": "git",
+              "title": "자주 쓰는 Git 명령",
+              "file": "content/reference/git.md",
+              "docsUrl": "https://git-scm.com/docs",
+              "lastVerified": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "usage",
+          "title": "활용",
+          "lessons": [
+            {
+              "id": "errors",
+              "title": "오류 메시지 사전",
+              "file": "content/reference/errors.md",
+              "docsUrl": "https://code.claude.com/docs/en/errors",
+              "lastVerified": "2026-11-14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

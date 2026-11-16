@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 345" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <rect width="760" height="345" rx="16" fill="#151922"/>
+  <text x="24" y="34" fill="#ff8a5c" font-size="15" font-weight="700">슬래시(/) 명령 치트시트 — 목적별로 기억하세요</text>
+  <g font-size="13">
+    <rect x="24" y="52" width="228" height="250" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="40" y="80" fill="#e6e9f2" font-weight="700" font-size="15">대화 관리</text>
+    <g fill="#e6e9f2"><text x="40" y="108"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/clear</tspan> 새 대화</text><text x="40" y="136"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/compact</tspan> 요약</text><text x="40" y="164"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/context</tspan> 사용량</text><text x="40" y="192"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/resume</tspan> 이어가기</text><text x="40" y="220"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/rewind</tspan> 되돌리기</text><text x="40" y="248"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/btw</tspan> 곁가지 질문</text><text x="40" y="276"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/exit</tspan> 종료</text></g>
+
+    <rect x="266" y="52" width="228" height="250" rx="14" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="282" y="80" fill="#ffd9c8" font-weight="700" font-size="15">설정·안전</text>
+    <g fill="#e6e9f2"><text x="282" y="108"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/model</tspan> 모델 변경</text><text x="282" y="136"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/effort</tspan> 노력도</text><text x="282" y="164"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/permissions</tspan> 규칙</text><text x="282" y="192"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/plan</tspan> 플랜 모드</text><text x="282" y="220"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/config</tspan> 설정 화면</text><text x="282" y="248"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/statusline</tspan> 상태줄</text><text x="282" y="276"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/theme</tspan> 테마</text></g>
+
+    <rect x="508" y="52" width="228" height="250" rx="14" fill="#222838" stroke="#343c52"/>
+    <text x="524" y="80" fill="#e6e9f2" font-weight="700" font-size="15">프로젝트·확인</text>
+    <g fill="#e6e9f2"><text x="524" y="108"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/init</tspan> CLAUDE.md</text><text x="524" y="136"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/memory</tspan> 메모리 편집</text><text x="524" y="164"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/mcp</tspan> MCP 상태</text><text x="524" y="192"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/agents</tspan> 서브에이전트</text><text x="524" y="220"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/usage</tspan> 비용·한도</text><text x="524" y="248"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/status</tspan> 상태</text><text x="524" y="276"><tspan fill="#ffd9c8" font-family="Consolas,monospace">/doctor</tspan> 진단</text></g>
+  </g>
+  <text x="380" y="328" fill="#8b93a7" font-size="12" text-anchor="middle">/ 만 입력하면 지금 쓸 수 있는 명령 목록이 나타납니다</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8b93a7"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker>
+  </defs>
+  <rect width="760" height="340" rx="16" fill="#151922"/>
+
+  <!-- 요청 -->
+  <rect x="24" y="130" width="150" height="80" rx="14" fill="#222838" stroke="#4a5470" stroke-width="2"/>
+  <text x="99" y="162" text-anchor="middle" font-size="22">💬</text>
+  <text x="99" y="188" text-anchor="middle" fill="#e6e9f2" font-size="15" font-weight="700">새 폴더 만들어 줘</text>
+
+  <!-- 갈래 -->
+  <path d="M176 160C215 160 215 86 262 86" fill="none" stroke="#8b93a7" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M176 180C215 180 215 254 262 254" fill="none" stroke="#ff8a5c" stroke-width="2.5" marker-end="url(#o)"/>
+
+  <!-- AI 모델 -->
+  <text x="270" y="44" fill="#8b93a7" font-size="15" font-weight="700">AI 모델 (채팅)</text>
+  <rect x="264" y="56" width="232" height="60" rx="12" fill="#222838" stroke="#343c52"/>
+  <text x="380" y="82" text-anchor="middle" fill="#e6e9f2" font-size="14">"폴더 만드는 방법을</text>
+  <text x="380" y="102" text-anchor="middle" fill="#e6e9f2" font-size="14">알려 드릴게요"</text>
+  <path d="M498 86H540" stroke="#8b93a7" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="542" y="56" width="194" height="60" rx="12" fill="#1b2030" stroke="#343c52" stroke-dasharray="5 4"/>
+  <text x="639" y="82" text-anchor="middle" fill="#c4cadb" font-size="14">🧑 사람이 설명을 보고</text>
+  <text x="639" y="102" text-anchor="middle" fill="#c4cadb" font-size="14">직접 폴더를 만듦</text>
+
+  <line x1="262" y1="150" x2="736" y2="150" stroke="#2b3246" stroke-dasharray="4 6"/>
+
+  <!-- AI 에이전트 -->
+  <text x="270" y="212" fill="#ff8a5c" font-size="15" font-weight="700">AI 에이전트 (Claude Code)</text>
+  <rect x="264" y="224" width="232" height="60" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/>
+  <text x="380" y="250" text-anchor="middle" fill="#ffd9c8" font-size="14">"PC를 직접 조작해서</text>
+  <text x="380" y="270" text-anchor="middle" fill="#ffd9c8" font-size="14">폴더를 만들게요"</text>
+  <path d="M498 254H540" stroke="#ff8a5c" stroke-width="2" marker-end="url(#o)"/>
+  <rect x="542" y="224" width="194" height="60" rx="12" fill="#17291f" stroke="#7ee2a8" stroke-width="2"/>
+  <text x="639" y="250" text-anchor="middle" fill="#bff5d8" font-size="14">📁 새 폴더 생성 완료 ✔</text>
+  <text x="639" y="270" text-anchor="middle" fill="#7ee2a8" font-size="13">사람은 지켜보기만 하면 끝</text>
+
+  <text x="380" y="322" text-anchor="middle" fill="#8b93a7" font-size="13">같은 부탁이라도, 모델은 "말"로 끝나고 에이전트는 "행동"까지 합니다</text>
+</svg>

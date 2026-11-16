@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" font-family="'Malgun Gothic','Pretendard',sans-serif">
+  <defs><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ff8a5c"/></marker></defs>
+  <rect width="760" height="340" rx="16" fill="#151922"/>
+  <text x="24" y="34" fill="#ff8a5c" font-size="15" font-weight="700">권한 모드 — 왼쪽일수록 안전하고, 오른쪽일수록 자동입니다</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="24" y="56" width="108" height="130" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="78" y="82" fill="#e6e9f2" font-weight="700" font-size="14">default</text><text x="78" y="104" fill="#8b93a7" font-size="12">읽기만 자동</text><text x="78" y="124" fill="#8b93a7" font-size="12">나머지는</text><text x="78" y="142" fill="#8b93a7" font-size="12">매번 묻기</text>
+
+    <rect x="144" y="56" width="108" height="130" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="198" y="82" fill="#e6e9f2" font-weight="700" font-size="14">acceptEdits</text><text x="198" y="104" fill="#8b93a7" font-size="12">폴더 안 파일</text><text x="198" y="124" fill="#8b93a7" font-size="12">수정은 자동</text>
+
+    <rect x="264" y="56" width="108" height="130" rx="12" fill="#2b1f1a" stroke="#ff8a5c"/>
+    <text x="318" y="82" fill="#ffd9c8" font-weight="700" font-size="14">plan</text><text x="318" y="104" fill="#c9a18d" font-size="12">읽기 전용</text><text x="318" y="124" fill="#c9a18d" font-size="12">계획 승인 전</text><text x="318" y="142" fill="#c9a18d" font-size="12">수정 불가</text>
+
+    <rect x="384" y="56" width="108" height="130" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="438" y="82" fill="#e6e9f2" font-weight="700" font-size="14">auto</text><text x="438" y="104" fill="#8b93a7" font-size="12">분류기가 위험한</text><text x="438" y="124" fill="#8b93a7" font-size="12">작업만 검토</text>
+
+    <rect x="504" y="56" width="108" height="130" rx="12" fill="#222838" stroke="#343c52"/>
+    <text x="558" y="82" fill="#e6e9f2" font-weight="700" font-size="14">dontAsk</text><text x="558" y="104" fill="#8b93a7" font-size="12">미리 허용한</text><text x="558" y="124" fill="#8b93a7" font-size="12">것만 실행</text><text x="558" y="142" fill="#8b93a7" font-size="12">(CI용)</text>
+
+    <rect x="624" y="56" width="112" height="130" rx="12" fill="#2a1416" stroke="#ef4444"/>
+    <text x="680" y="82" fill="#fca5a5" font-weight="700" font-size="14">bypass</text><text x="680" y="104" fill="#f1a1a1" font-size="12">전부 승인</text><text x="680" y="124" fill="#f1a1a1" font-size="12">격리된 환경</text><text x="680" y="142" fill="#f1a1a1" font-size="12">전용</text>
+  </g>
+  <path d="M60 214H700" stroke="#ff8a5c" stroke-width="2" fill="none" marker-end="url(#o)"/>
+  <text x="60" y="238" fill="#4ade80" font-size="13">안전</text><text x="700" y="238" fill="#fca5a5" font-size="13" text-anchor="end">위험 (보호 장치 없음)</text>
+  <rect x="24" y="260" width="712" height="56" rx="12" fill="#222838" stroke="#343c52"/>
+  <text x="44" y="284" fill="#e6e9f2" font-size="14"><tspan fill="#ffd9c8" font-weight="700">Shift+Tab</tspan> 으로 모드를 순환합니다 (default → acceptEdits → plan …)</text>
+  <text x="44" y="304" fill="#8b93a7" font-size="12">화면 아래 줄에 현재 모드가 표시됩니다 · 버전에 따라 시작 모드가 다를 수 있습니다</text>
+</svg>
