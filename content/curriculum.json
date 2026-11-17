@@ -1,6 +1,6 @@
 {
   "siteTitle": "Claude Code 학습 키트",
-  "lastDocsCheck": "2026-11-17",
+  "lastDocsCheck": "2026-11-18",
   "levels": [
     {
       "id": "level1",
@@ -27,7 +27,7 @@
               "minutes": 3,
               "docsUrl": "https://code.claude.com/docs/en/authentication",
               "watch": true,
-              "lastVerified": "2026-11-14",
+              "lastVerified": "2026-11-18",
               "prompt": "/status 로 지금 내가 어떤 방식으로 로그인되어 있는지 알려 줘"
             },
             {
@@ -37,7 +37,7 @@
               "minutes": 5,
               "docsUrl": "https://code.claude.com/docs/ko/setup",
               "watch": true,
-              "lastVerified": "2026-11-17",
+              "lastVerified": "2026-11-18",
               "prompt": "claude doctor 를 실행해서 설치 상태에 문제가 없는지 알려 줘"
             },
             {
@@ -121,7 +121,7 @@
               "minutes": 4,
               "docsUrl": "https://code.claude.com/docs/ko/model-config",
               "watch": true,
-              "lastVerified": "2026-11-16",
+              "lastVerified": "2026-11-18",
               "prompt": "지금 어떤 모델을 쓰고 있는지 알려 주고, Haiku · Sonnet · Opus 차이를 두 줄로 설명해 줘"
             },
             {
@@ -164,7 +164,7 @@
               "minutes": 6,
               "docsUrl": "https://code.claude.com/docs/ko/context-window",
               "watch": true,
-              "lastVerified": "2026-11-14",
+              "lastVerified": "2026-11-18",
               "prompt": "/context 를 보고 지금 무엇이 컨텍스트를 가장 많이 차지하는지 설명해 줘"
             },
             {
@@ -183,7 +183,7 @@
               "minutes": 6,
               "docsUrl": "https://code.claude.com/docs/ko/model-config",
               "watch": true,
-              "lastVerified": "2026-11-14",
+              "lastVerified": "2026-11-18",
               "prompt": "지금 쓰는 모델과 사용량을 확인하고, 비용을 아끼는 방법을 3가지 알려 줘"
             }
           ]
@@ -199,7 +199,7 @@
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/permission-modes",
               "watch": true,
-              "lastVerified": "2026-11-17",
+              "lastVerified": "2026-11-18",
               "prompt": "지금 적용 중인 권한 모드와 허용·거부 규칙을 정리해 줘"
             },
             {
@@ -209,7 +209,7 @@
               "minutes": 5,
               "docsUrl": "https://code.claude.com/docs/ko/permission-modes",
               "watch": true,
-              "lastVerified": "2026-11-14",
+              "lastVerified": "2026-11-18",
               "prompt": "/plan 이 폴더를 정리하는 계획을 세워 줘. 아직 아무것도 수정하지 마"
             },
             {
@@ -320,7 +320,7 @@
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/mcp",
               "watch": true,
-              "lastVerified": "2026-11-14",
+              "lastVerified": "2026-11-18",
               "prompt": "/mcp 로 지금 연결된 서버가 있는지 알려 줘"
             },
             {
@@ -330,7 +330,7 @@
               "minutes": 8,
               "docsUrl": "https://code.claude.com/docs/ko/sub-agents",
               "watch": true,
-              "lastVerified": "2026-11-14",
+              "lastVerified": "2026-11-18",
               "prompt": "코드 검토 전용 서브에이전트를 만들어 줘. 파일 읽기만 가능하게"
             }
           ]

@@ -186,7 +186,7 @@
 | `--cloud` | 작업 설명을 주면 새 클라우드 세션을 만듦. 세션 ID(`session_...` 또는 `cse_...`)나 claude.ai/code URL을 주면 `-p`와 함께 그 기존 세션에 메시지를 대기열로 보냄(후속 메시지 보내기 참고) | 예: `claude --cloud "Fix the login bug"` |
 | `--environment <environment-id>` | 주어진 ID의 자체 호스팅 환경에서 실행되는 새 클라우드 세션을 만듦. 환경 ID는 `ccpool_`로 시작. 배포 동작과 함께 쓸 수 없는 플래그 조합은 원문 참고. v2.1.224 이상 | 예: `claude -p "Fix the login bug" --environment ccpool_abc123` |
 | `--exec` | Claude 세션을 시작하는 대신 셸 명령을 PTY 기반 백그라운드 작업으로 실행. 셸에서 띄울 때는 `--bg`와 함께 사용 | 예: `claude --bg --exec 'pytest -x'` |
-| `--ref <branch>` | `--environment`와 함께 쓸 때 새 세션의 체크아웃을 로컬 `HEAD` 대신 지정한 ref(브랜치)로 설정 | 예: `claude -p "Run the smoke test" --environment ccpool_abc123 --ref main` |
+| `--ref <branch>` | `--environment`와 함께 쓸 때 새 세션의 체크아웃을 로컬 `HEAD` 대신 지정한 ref(브랜치)로 설정 | v2.1.224+<br>예: `claude -p "Run the smoke test" --environment ccpool_abc123 --ref main` |
 | `--remote` | `--cloud`의 더 이상 권장되지 않는 별칭(기존 세션 형식 포함) | 더 이상 권장되지 않음<br>예: `claude --remote "Fix the login bug"` |
 | `--remote-control`, `--rc` | Remote Control을 켠 대화형 세션을 시작해 claude.ai나 Claude 앱에서도 제어할 수 있게 함. 세션 이름을 줄 수 있음. 별칭 `--rc` | 예: `claude --remote-control "My Project"` |
 | `--remote-control-session-name-prefix <prefix>` | 이름을 따로 주지 않을 때 자동 생성되는 Remote Control 세션 이름의 접두어. 기본값은 기기 호스트 이름이며 `myhost-graceful-unicorn` 같은 이름이 만들어짐. 같은 효과를 내는 환경 변수는 `CLAUDE_REMOTE_CONTROL_SESSION_NAME_PREFIX` | 예: `claude remote-control --remote-control-session-name-prefix dev-box` |
@@ -203,4 +203,4 @@
 
 ---
 
-**출처:** [공식 문서 cli-reference](https://code.claude.com/docs/en/cli-reference) · 이 표는 2026-11-17에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 항목이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.
+**출처:** [공식 문서 cli-reference](https://code.claude.com/docs/en/cli-reference) · 이 표는 2026-11-18에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 항목이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.
