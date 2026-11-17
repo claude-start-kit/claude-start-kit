@@ -1,14 +1,14 @@
 {
-  "https://code.claude.com/docs/en/authentication": "e113fd3094b0243cd95780d98cd86c60685deeb68afd1232cd89b783dab347cf",
-  "https://code.claude.com/docs/ko/setup": "dc600173d196732a7120ef9bd93e901e6be4872dd323363067ee3f4387625c7d",
+  "https://code.claude.com/docs/en/authentication": "6328bd4a56e27a7a6791b5cd9059d4b3ed2413fc93d1f23febbe02171715a441",
+  "https://code.claude.com/docs/ko/setup": "1e6b47a4fc7de3346cb3f394630ed1c09a666d6117b52f317676778bea511599",
   "https://code.claude.com/docs/ko/quickstart": "fe5dfb74af4d3be9943370488c63bff8ea4f4417257c5f9402223eacffd8cf78",
-  "https://code.claude.com/docs/ko/model-config": "a4a9debab70852113edfd9825058bee71a9db34518530eb323c8d9b82279ad92",
-  "https://code.claude.com/docs/ko/permission-modes": "148a2a0ee82b0cf811d600b4ef6addc94f9ba39144c51f4f265ffa7ab23739b3",
+  "https://code.claude.com/docs/ko/model-config": "6d21658a414444338bf89c95d37c85296adcfdc4db337867399425d59b190470",
+  "https://code.claude.com/docs/ko/permission-modes": "5e4307b94bf8f13627a56c754caa9e48a341e95cfcc5589a0cac68d3ea6c4cd8",
   "https://code.claude.com/docs/ko/settings": "5637c90f71a38f2fdcb03175c7ef7737de9fc87ec2decbf731d1410cf57e22f6",
-  "https://code.claude.com/docs/en/commands": "a011a8fdebcb1c0c29a810fb46361954c9aac8c66ec1d5552852059d4e062fbc",
-  "https://code.claude.com/docs/en/cli-reference": "5f65dda805f72d2ded0c55f7a7f098b093f278ea0c013382dbd7cc563392b682",
-  "https://code.claude.com/docs/ko/context-window": "8777d4d8d58aa0d2bbaa5e2ab189bea722ca2cadf64a0c46e0d6cc37c2a26bee",
+  "https://code.claude.com/docs/en/commands": "10cfb87b52042071f4d2a8a0b8b7f201c04877569a864404bd3e74e8a57f78d5",
+  "https://code.claude.com/docs/en/cli-reference": "03aa2de8f4f1d412aa9d1f58a16b912aeb06e9ec0bab693a1129c2b26374f57e",
+  "https://code.claude.com/docs/ko/context-window": "33bd5489f0bc9ab46f63bdf3aa902d23b7f46ba1967b9e281bd626f0474f211e",
   "https://code.claude.com/docs/ko/memory": "bfe93333ab64f955be036a97bda5e981d1016802da940dcba3427bc2783ebf0a",
-  "https://code.claude.com/docs/ko/mcp": "4aaa3a17934c18018ce15485f06ae92bf18ffa8cfd0a0d5a05531080ad6b1807",
-  "https://code.claude.com/docs/ko/sub-agents": "97586ed4e931d1387983dd8246c90856e9ea64aab38546617c2eda0c8254c2e0"
+  "https://code.claude.com/docs/ko/mcp": "0bce3bd28e57eaf4802b33e8bdcec6689e871503b5f4ee8ce4e1f3fd38f6f87a",
+  "https://code.claude.com/docs/ko/sub-agents": "c4c7b71cea227ec058c926c012e8942857bc9d6efac10a7b2b536b927f2c20f8"
 }
