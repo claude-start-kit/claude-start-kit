@@ -161,5 +161,25 @@
         "cmd": "claude -p \"Claude Code가 무엇인지 비전공자에게 두 문장으로 설명해 줘\""
       }
     ]
+  },
+  {
+    "name": "my-automation",
+    "title": "Windows PowerShell",
+    "demoDir": "weekly-demo",
+    "clean": true,
+    "displayCwd": "C:\\Users\\me\\weekly-demo",
+    "width": 960,
+    "steps": [
+      {
+        "cmd": "Set-Content week-memo.txt -Encoding UTF8 -Value '월: 신제품 소개서 초안 작성. 화: 거래처 A사 견적 문의 회신. 수: 소개서 팀장 검토 요청, 수정 의견 2건. 목: 소개서 수정 완료, 월간 매출 엑셀 정리 시작. 금: 엑셀 정리 80% 완료, 나머지는 다음 주. 이슈: 거래처 B사 답변 아직 없음.'",
+        "hide": true
+      },
+      {
+        "cmd": "Get-Content week-memo.txt"
+      },
+      {
+        "cmd": "claude -p \"week-memo.txt를 읽고 주간 보고 초안을 '이번 주 한 일', '다음 주 계획', '이슈' 세 항목으로 써 줘. 메모에 없는 내용은 지어내지 말고, 추정한 부분은 따로 표시해 줘\""
+      }
+    ]
   }
 ]
