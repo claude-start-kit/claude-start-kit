@@ -349,6 +349,15 @@
               "prompt": "meeting.txt 를 읽고 결정사항, 담당자, 마감일을 표로 정리해 줘. 추정한 정보는 따로 표시해 줘"
             },
             {
+              "id": "my-automation",
+              "title": "내 업무 자동화 하나 만들기",
+              "file": "content/level2/my-automation.md",
+              "minutes": 25,
+              "docsUrl": "",
+              "lastVerified": "2026-11-18",
+              "prompt": "내가 자주 하는 업무 하나를 말할 테니, 가짜 데이터로 먼저 자동화해 보는 방법을 단계별로 안내해 줘"
+            },
+            {
               "id": "faq",
               "title": "막힐 때 FAQ",
               "file": "content/level2/faq.md",
