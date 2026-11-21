@@ -87,9 +87,40 @@ window.CSKitHome = (() => {
         </div>
       </section>
 
+      <section class="vs">
+        <h2 class="sec-title">Claude Code가 Claude와 같은 건가요?</h2>
+        <p class="sec-sub">둘 다 Claude 계정으로 쓰지만, <strong>하는 일이 다릅니다.</strong> Claude는 대화로 답을 주고, Claude Code는 내 PC에서 일을 직접 끝냅니다.</p>
+        <div class="vs-grid">
+          <div class="vs-card">
+            <h3>Claude <small>웹·앱 채팅</small></h3>
+            <ul>
+              <li><b>하는 일</b>질문에 답하고 글을 써 줍니다</li>
+              <li><b>결과물</b>대화창에 글로 나옵니다. 옮기는 건 내 몫</li>
+              <li><b>파일</b>필요할 때 내가 올려 줍니다</li>
+              <li><b>시작</b>브라우저·앱에서 바로</li>
+            </ul>
+          </div>
+          <div class="vs-card hl">
+            <h3>Claude Code <small>AI 에이전트</small></h3>
+            <ul>
+              <li><b>하는 일</b>파일을 고치고 실행하고 확인까지 합니다</li>
+              <li><b>결과물</b>내 폴더의 파일에 바로 반영 (변경 전 확인)</li>
+              <li><b>파일</b>작업 폴더의 파일을 스스로 읽습니다</li>
+              <li><b>시작</b>유료 구독 로그인 후 터미널·IDE·데스크톱 앱</li>
+            </ul>
+          </div>
+        </div>
+        <div class="vs-when">
+          <div class="say"><span>Claude</span> 이 메일 문장을 더 공손하게 다듬어 줘</div>
+          <div class="say"><span>Claude Code</span> 이 폴더의 회의록 50개에서 결정사항을 표 하나로 정리해 줘</div>
+        </div>
+        <p class="vs-note">Claude 데스크톱 앱에는 채팅 옆에 <strong>Code 탭</strong>이 있습니다. 같은 앱 안에서 Claude Code를 쓸 수도 있습니다.</p>
+        <a class="textlink" href="#/level1/what-is-claude-code">자세히 보기 →</a>
+      </section>
+
       <section class="split">
         <div>
-          <h2 class="sec-title">챗봇과 무엇이 다를까요?</h2>
+          <h2 class="sec-title">모델과 에이전트, 무엇이 다를까요?</h2>
           <p class="sec-sub">챗봇은 <strong>답을 줍니다.</strong> 에이전트는 <strong>일을 끝냅니다.</strong></p>
           <ul class="ticks">
             <li>챗봇: 글로 답하면, 사람이 그 답을 보고 직접 작업합니다</li>
