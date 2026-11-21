@@ -201,7 +201,7 @@ code { font-family: Consolas, "Courier New", monospace; }
 .lesson table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; }
 .lesson th, .lesson td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
 .lesson th { background: var(--panel-2); }
-.lesson td:first-child > strong { white-space: nowrap; }
+.lesson td:first-child > strong { white-space: nowrap; display: inline-block; min-width: 4.5em; padding-right: 8px; }
 .lesson svg a.svg-link { cursor: pointer; }
 .lesson svg a.svg-link:hover { opacity: .8; }
 .lesson img.vsicon { display: inline; width: 20px; height: 20px; margin: 0 3px; padding: 4px; border: 0; border-radius: 5px; background: #2a2f3c; vertical-align: -6px; box-sizing: content-box; }
@@ -290,6 +290,20 @@ code { font-family: Consolas, "Courier New", monospace; }
 .for-card span { position: absolute; top: 4px; left: 16px; font-size: 54px; line-height: 1; color: var(--accent); opacity: .45; font-family: Georgia, serif; }
 .for-card p { margin: 18px 0 0; font-size: 16.5px; color: #c3c9d9; }
 .for-card strong { color: var(--fg); }
+
+/* Claude vs Claude Code */
+.vs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 18px; }
+.vs-card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+.vs-card.hl { border-color: rgba(255, 138, 92, .55); background: var(--accent-soft); }
+.vs-card h3 { margin: 0 0 12px; font-size: 20px; letter-spacing: -0.02em; }
+.vs-card h3 small { font-size: 13px; font-weight: 600; color: var(--muted); margin-left: 6px; }
+.vs-card ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; color: #c3c9d9; }
+.vs-card li b { display: block; font-size: 12px; color: var(--muted); letter-spacing: .04em; margin-bottom: 1px; }
+.vs-card.hl li b { color: var(--accent); }
+.vs-when { display: grid; gap: 10px; margin: 18px 0 0; }
+.vs-when .say span { font-weight: 700; margin-right: 6px; }
+.vs-note { margin: 16px 0 10px; color: #c3c9d9; }
+.vs-note strong { color: var(--fg); }
 
 /* 챗봇 vs 에이전트 */
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 36px; align-items: center; }
