@@ -16,7 +16,7 @@ claude --model haiku    # 시작할 때 지정
 선택기에서 **Enter**는 기본값으로 저장, **s**는 이번 세션에만 적용합니다.
 
 ## 사용 가능한 별칭
-`sonnet` · `opus` · `haiku` · `opusplan`(계획은 opus, 실행은 sonnet) · `default`(계정 기본값으로 복귀)
+`sonnet` · `opus` · `haiku` · `fable`(가장 어렵고 오래 걸리는 작업용) · `opusplan`(계획은 opus, 실행은 sonnet) · `default`(계정 기본값으로 복귀)
 
 ## 노력도(effort)
 같은 모델이라도 **얼마나 깊게 생각할지** 조절합니다.
