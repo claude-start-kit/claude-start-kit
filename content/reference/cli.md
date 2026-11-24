@@ -161,18 +161,16 @@
 | `--system-prompt-file` | 파일에서 시스템 프롬프트를 불러와 기본 프롬프트를 교체 | 예: `claude --system-prompt-file ./custom-prompt.txt` |
 | `--system-prompt-snapshot` | `off`를 주면 대화의 첫 요청에 기록된 프롬프트를 재사용하지 않고 매 요청마다 시스템 프롬프트를 다시 만듦(예: `--continue` 실행을 거듭하며 `--append-system-prompt` 텍스트를 고쳐 볼 때). v2.1.257 이상 | 예: `claude --system-prompt-snapshot off` |
 
-## 플래그 · 에이전트·MCP·플러그인·설정 (14)
+## 플래그 · 에이전트·MCP·플러그인·설정 (12)
 
 | 플래그 | 설명 | 비고 |
 | :- | :- | :- |
 | `--agent` | 현재 세션에 쓸 에이전트를 지정(`agent` 설정보다 우선) | 예: `claude --agent my-custom-agent` |
 | `--agents` | JSON으로 사용자 정의 서브에이전트를 즉석에서 정의. CLI에서 정의하는 서브에이전트의 필드를 받음. `--print`와 함께면 값을 JSON 파일 경로로 줄 수도 있음(파일 형식은 v2.1.281 이상). 시작할 때 값을 검증하고 잘못되면 종료함(검증은 v2.1.242 이상, 검증을 건너뛰는 플래그와 환경 변수는 원문 참고) | 예: `claude --agents '{"reviewer":{"description":"Reviews code","prompt":"You are a code reviewer"}}'` |
 | `--channels` | (연구 미리보기) 이 세션에서 채널 알림을 들을 MCP 서버. `plugin:<이름>@<마켓플레이스>` 항목을 공백으로 구분한 목록. claude.ai 또는 Console API 키로 Anthropic 인증 필요 | 예: `claude --channels plugin:my-notifier@my-marketplace` |
-| `--correlation-id <id>` | (번역 없음 — 원문 참고) With `--environment`, pass an ID to the `spawn-runner` hook as `CLAUDE_RUNNER_CORRELATION_ID`. | v2.1.328+<br>예: `claude -p "Run the build" --environment ccpool_abc123 --correlation-id build-4821` |
 | `--dangerously-load-development-channels` | 승인 목록에 없는 채널을 로컬 개발용으로 켬. `plugin:<이름>@<마켓플레이스>`, `server:<이름>` 항목을 받음. 확인 창이 뜨므로 대화형 세션에서만 적용되며 `-p`에서는 무시됨 | 예: `claude --dangerously-load-development-channels server:webhook` |
 | `--disable-slash-commands` | 이 세션의 모든 스킬과 명령을 끔 | 예: `claude --disable-slash-commands` |
 | `--mcp-config` | JSON 파일이나 문자열로 MCP 서버를 불러옴(공백으로 구분). `-p`와 함께 쓰면 첫 턴 전에 아직 연결 중인 서버를 `MCP_TIMEOUT`(기본 30초)까지 기다림. 도구 목록이 캐시된 서버는 기다리지 않고 처음 쓸 때 연결. 자체 호스팅 환경에서는 더 짧게 기다림. 이 대기는 v2.1.221 이상 | 예: `claude --mcp-config ./mcp.json` |
-| `--metadata <key=value>` | (번역 없음 — 원문 참고) With `--environment`, label the new session for the orchestrator's `--hook-label`. | v2.1.328+<br>예: `claude -p "Run the build" --environment ccpool_abc123 --metadata size=large` |
 | `--plugin-dir` | 이 세션에서만 디렉터리나 `.zip`의 플러그인(또는 플러그인 폴더 안의 여러 개)을 로드. 플래그 하나에 경로 하나이며, 여러 개면 반복(`--plugin-dir A --plugin-dir B.zip`). 플러그인 폴더를 넘기는 방식은 v2.1.265 이상 | 예: `claude --plugin-dir ./my-plugin` |
 | `--plugin-url` | 이 세션에서만 URL의 플러그인 `.zip`을 가져옴. 여러 개면 플래그를 반복하거나, 따옴표 안에 공백으로 구분한 URL을 한 번에 전달 | 예: `claude --plugin-url https://example.com/plugin.zip` |
 | `--setting-sources` | 불러올 설정 출처를 쉼표로 구분해 지정(`user`, `project`, `local`). 이 세션에서 시작하는 세션이 목록을 상속하는 방식은 에이전트 뷰·에이전트 팀 문서 참고 | 예: `claude --setting-sources user,project` |
@@ -180,14 +178,16 @@
 | `--strict-mcp-config` | `--mcp-config`의 MCP 서버만 사용하고 다른 MCP 설정은 모두 무시. 관리형 MCP 파일이 있을 때의 동작은 원문 참고 | 예: `claude --strict-mcp-config --mcp-config ./mcp.json` |
 | `--teammate-mode` | 에이전트 팀 팀원의 표시 방식: `in-process`(기본), `auto`, `tmux`, `iterm2`. 이 세션에서 `teammateMode` 설정을 덮어씀(표시 방식 선택 참고) | 예: `claude --teammate-mode auto` |
 
-## 플래그 · 백그라운드·클라우드·원격 (8)
+## 플래그 · 백그라운드·클라우드·원격 (10)
 
 | 플래그 | 설명 | 비고 |
 | :- | :- | :- |
 | `--bg`, `--background` | 세션을 백그라운드 에이전트로 시작하고 즉시 반환. 세션 ID와 관리 명령을 출력. `--exec`와 함께 쓰면 Claude 세션 대신 셸 명령을 백그라운드 작업으로, `--agent`와 함께 쓰면 특정 서브에이전트를 실행. 시작 전에 그 폴더의 작업 영역 신뢰 여부를 확인. `-p`/`--print`와 함께 쓸 수 없음(오류 레퍼런스 참고) | 예: `claude --bg "investigate the flaky test"` |
 | `--cloud` | 작업 설명을 주면 새 클라우드 세션을 만듦. 세션 ID(`session_...` 또는 `cse_...`)나 claude.ai/code URL을 주면 `-p`와 함께 그 기존 세션에 메시지를 대기열로 보냄(후속 메시지 보내기 참고) | 예: `claude --cloud "Fix the login bug"` |
+| `--correlation-id <id>` | `--environment`와 함께 쓸 때 ID를 `spawn-runner` 훅에 환경 변수 `CLAUDE_RUNNER_CORRELATION_ID`로 넘깁니다 | v2.1.328+<br>예: `claude -p "Run the build" --environment ccpool_abc123 --correlation-id build-4821` |
 | `--environment <environment-id>` | 주어진 ID의 자체 호스팅 환경에서 실행되는 새 클라우드 세션을 만듦. 환경 ID는 `ccpool_`로 시작. 배포 동작과 함께 쓸 수 없는 플래그 조합은 원문 참고. v2.1.224 이상 | 예: `claude -p "Fix the login bug" --environment ccpool_abc123` |
 | `--exec` | Claude 세션을 시작하는 대신 셸 명령을 PTY 기반 백그라운드 작업으로 실행. 셸에서 띄울 때는 `--bg`와 함께 사용 | 예: `claude --bg --exec 'pytest -x'` |
+| `--metadata <key=value>` | `--environment`와 함께 쓸 때 새 세션에 오케스트레이터의 `--hook-label`용 라벨을 붙입니다. 여러 번 쓸 수 있습니다. 라벨에 비밀 값을 넣지 마세요 | v2.1.328+<br>예: `claude -p "Run the build" --environment ccpool_abc123 --metadata size=large` |
 | `--ref <branch>` | `--environment`와 함께 쓸 때 새 세션의 체크아웃을 로컬 `HEAD` 대신 지정한 ref(브랜치)로 설정 | v2.1.224+<br>예: `claude -p "Run the smoke test" --environment ccpool_abc123 --ref main` |
 | `--remote` | `--cloud`의 더 이상 권장되지 않는 별칭(기존 세션 형식 포함) | 더 이상 권장되지 않음<br>예: `claude --remote "Fix the login bug"` |
 | `--remote-control`, `--rc` | Remote Control을 켠 대화형 세션을 시작해 claude.ai나 Claude 앱에서도 제어할 수 있게 함. 세션 이름을 줄 수 있음. 별칭 `--rc` | 예: `claude --remote-control "My Project"` |
@@ -205,4 +205,4 @@
 
 ---
 
-**출처:** [공식 문서 cli-reference](https://code.claude.com/docs/en/cli-reference) · 이 표는 2026-11-22에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 항목이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.
+**출처:** [공식 문서 cli-reference](https://code.claude.com/docs/en/cli-reference) · 이 표는 2026-11-25에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 항목이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.

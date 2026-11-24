@@ -120,5 +120,8 @@
   "/voice": { "cat": "model", "ko": "음성 받아쓰기를 켜고 끕니다. `hold`·`tap`처럼 특정 모드로 켤 수도 있습니다. Claude.ai 계정이 필요합니다." },
   "/web-setup": { "cat": "integ", "ko": "로컬 `gh` CLI 자격 증명으로 클라우드 세션용 GitHub 계정을 연결합니다." },
   "/workflow-authoring": { "cat": "ext", "ko": "동적 워크플로 스크립트 작성 참고 자료(스크립트 API, 재개 동작, 품질 패턴, 예제)를 불러옵니다. 보통 스크립트를 쓰기 전에 Claude가 알아서 불러옵니다." },
-  "/workflows": { "cat": "parallel", "ko": "진행 중이거나 끝난 워크플로를 보고, 일시 중지·재개·저장하는 진행 보기를 엽니다." }
+  "/workflows": { "cat": "parallel", "ko": "진행 중이거나 끝난 워크플로를 보고, 일시 중지·재개·저장하는 진행 보기를 엽니다." },
+  "/ship": {"cat":"work","ko":"작업을 커밋·푸시하고 브랜치에 PR이 없으면 GitHub PR을 열어 변경을 검토한 뒤, 이 세션에서 PR을 지켜보며 리뷰 의견과 실패한 검사에 맞춰 수정을 푸시합니다. `/ship stop`으로 지켜보기를 끝냅니다."},
+  "/ship:review": {"cat":"work","ko":"`/code-review`의 별칭입니다."},
+  "/steward": {"cat":"work","ko":"열려 있는 GitHub PR을 이 세션에서 지켜보며 리뷰 의견과 실패한 검사에 맞춰 수정을 푸시합니다. `/ship`과 달리 먼저 검토하는 단계가 없습니다. `/steward stop`으로 끝냅니다."}
 }
