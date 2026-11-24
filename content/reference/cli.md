@@ -1,6 +1,6 @@
 # CLI reference — 터미널 명령·플래그
 
-> 터미널에서 `claude`를 실행할 때 쓰는 **명령 36개와 플래그 80개**를 한국어로 정리한 참고용 표입니다. 위의 검색창에 이름이나 키워드를 입력하면 바로 거를 수 있습니다. (세션 안에서 쓰는 `/명령`은 [Commands](#/ref/slash-all)를 보세요.)
+> 터미널에서 `claude`를 실행할 때 쓰는 **명령 36개와 플래그 82개**를 한국어로 정리한 참고용 표입니다. 위의 검색창에 이름이나 키워드를 입력하면 바로 거를 수 있습니다. (세션 안에서 쓰는 `/명령`은 [Commands](#/ref/slash-all)를 보세요.)
 
 ## 읽는 법
 - **명령**은 `claude` 뒤에 붙는 하위 명령, **플래그**는 `claude` 뒤에 붙는 시작 옵션입니다
@@ -43,7 +43,7 @@
 | :- | :- | :- |
 | `claude update` | 최신 버전으로 업데이트 |  |
 | `claude install [version]` | 네이티브 바이너리 설치·재설치. `2.1.118` 같은 버전이나 `stable`, `latest` 지정 가능 | 예: `claude install stable` |
-| `claude auth login` | Anthropic 계정 로그인. `--email`은 이메일 미리 입력, `--sso`는 SSO 강제, `--console`은 구독 대신 Anthropic Console(API 사용량 과금)로 로그인 | 예: `claude auth login --console` |
+| `claude auth login` | Anthropic 계정 로그인. `--email`은 이메일 미리 입력, `--sso`는 SSO 강제, `--console`은 구독 대신 Anthropic Console(API 사용량 과금)로 로그인 | v2.1.316+<br>예: `claude auth login --console` |
 | `claude auth logout` | Anthropic 계정 로그아웃 |  |
 | `claude auth status` | 인증 상태를 JSON으로 표시. `--text`는 읽기 쉬운 출력. 로그인돼 있으면 종료 코드 0, 아니면 1. JSON에는 CLI가 쓰는 설정 폴더를 알려 주는 `configDirectory` 필드(v2.1.268 이상)와 `authMethod` 필드(`none`, `claude.ai`, `oauth_token`, `api_key`, `api_key_helper`, `third_party` 중 하나)가 들어 있음 |  |
 | `claude doctor` | 세션을 시작하지 않고 설치·설정 진단을 읽기 전용으로 출력(설치 상태, 설정 파일 오류, Remote Control 사용 가능 여부). 세션 안에서 수정까지 해 주는 점검은 `/doctor` |  |
@@ -116,7 +116,7 @@
 
 | 플래그 | 설명 | 비고 |
 | :- | :- | :- |
-| `--allow-dangerously-skip-permissions` | `bypassPermissions`로 시작하지는 않고 `Shift+Tab` 모드 순환에 추가. `plan` 같은 다른 모드로 시작했다가 나중에 `bypassPermissions`로 전환할 수 있음 | 예: `claude --permission-mode plan --allow-dangerously-skip-permissions` |
+| `--allow-dangerously-skip-permissions` | `bypassPermissions`로 시작하지는 않고 `Shift+Tab` 모드 순환에 추가. `plan` 같은 다른 모드로 시작했다가 나중에 `bypassPermissions`로 전환할 수 있음 | 예: `claude --permission-mode default --allow-dangerously-skip-permissions` |
 | `--allowedTools`, `--allowed-tools` | 권한 확인 없이 실행할 도구(네트워크 경로 읽기는 제외). 패턴은 권한 규칙 문법 참고. 사용 가능한 도구 자체를 제한하려면 `--tools` 사용. 작업 추적 도구를 이름으로 지정할 때의 동작은 원문 참고 | 예: `"Bash(git log *)" "Bash(git diff *)" "Read"` |
 | `--dangerously-skip-permissions` | 권한 확인을 건너뜀. `--permission-mode bypassPermissions`와 같음. 무엇을 건너뛰고 건너뛰지 않는지는 권한 모드 문서 참고. `--bg`로 시작한 세션은 관리자가 재시작해도 이 모드가 유지됨 | 예: `claude --dangerously-skip-permissions` |
 | `--disallowedTools`, `--disallowed-tools` | 거부 규칙. 도구 이름만 쓰면 그 도구를 Claude의 컨텍스트에서 제거(`"Edit"`는 Edit, `"*"`는 모든 도구, `"mcp__*"`는 모든 MCP 도구). `Bash(rm *)` 같은 범위 규칙은 도구는 남기고 일치하는 호출만 거부. `EndConversation`을 지정해도 다른 도구가 남아 있으면 제거되지 않음 | 예: `"Bash(git log *)" "Bash(git diff *)" "Edit"` |
@@ -161,16 +161,18 @@
 | `--system-prompt-file` | 파일에서 시스템 프롬프트를 불러와 기본 프롬프트를 교체 | 예: `claude --system-prompt-file ./custom-prompt.txt` |
 | `--system-prompt-snapshot` | `off`를 주면 대화의 첫 요청에 기록된 프롬프트를 재사용하지 않고 매 요청마다 시스템 프롬프트를 다시 만듦(예: `--continue` 실행을 거듭하며 `--append-system-prompt` 텍스트를 고쳐 볼 때). v2.1.257 이상 | 예: `claude --system-prompt-snapshot off` |
 
-## 플래그 · 에이전트·MCP·플러그인·설정 (12)
+## 플래그 · 에이전트·MCP·플러그인·설정 (14)
 
 | 플래그 | 설명 | 비고 |
 | :- | :- | :- |
 | `--agent` | 현재 세션에 쓸 에이전트를 지정(`agent` 설정보다 우선) | 예: `claude --agent my-custom-agent` |
 | `--agents` | JSON으로 사용자 정의 서브에이전트를 즉석에서 정의. CLI에서 정의하는 서브에이전트의 필드를 받음. `--print`와 함께면 값을 JSON 파일 경로로 줄 수도 있음(파일 형식은 v2.1.281 이상). 시작할 때 값을 검증하고 잘못되면 종료함(검증은 v2.1.242 이상, 검증을 건너뛰는 플래그와 환경 변수는 원문 참고) | 예: `claude --agents '{"reviewer":{"description":"Reviews code","prompt":"You are a code reviewer"}}'` |
 | `--channels` | (연구 미리보기) 이 세션에서 채널 알림을 들을 MCP 서버. `plugin:<이름>@<마켓플레이스>` 항목을 공백으로 구분한 목록. claude.ai 또는 Console API 키로 Anthropic 인증 필요 | 예: `claude --channels plugin:my-notifier@my-marketplace` |
+| `--correlation-id <id>` | (번역 없음 — 원문 참고) With `--environment`, pass an ID to the `spawn-runner` hook as `CLAUDE_RUNNER_CORRELATION_ID`. | v2.1.328+<br>예: `claude -p "Run the build" --environment ccpool_abc123 --correlation-id build-4821` |
 | `--dangerously-load-development-channels` | 승인 목록에 없는 채널을 로컬 개발용으로 켬. `plugin:<이름>@<마켓플레이스>`, `server:<이름>` 항목을 받음. 확인 창이 뜨므로 대화형 세션에서만 적용되며 `-p`에서는 무시됨 | 예: `claude --dangerously-load-development-channels server:webhook` |
 | `--disable-slash-commands` | 이 세션의 모든 스킬과 명령을 끔 | 예: `claude --disable-slash-commands` |
 | `--mcp-config` | JSON 파일이나 문자열로 MCP 서버를 불러옴(공백으로 구분). `-p`와 함께 쓰면 첫 턴 전에 아직 연결 중인 서버를 `MCP_TIMEOUT`(기본 30초)까지 기다림. 도구 목록이 캐시된 서버는 기다리지 않고 처음 쓸 때 연결. 자체 호스팅 환경에서는 더 짧게 기다림. 이 대기는 v2.1.221 이상 | 예: `claude --mcp-config ./mcp.json` |
+| `--metadata <key=value>` | (번역 없음 — 원문 참고) With `--environment`, label the new session for the orchestrator's `--hook-label`. | v2.1.328+<br>예: `claude -p "Run the build" --environment ccpool_abc123 --metadata size=large` |
 | `--plugin-dir` | 이 세션에서만 디렉터리나 `.zip`의 플러그인(또는 플러그인 폴더 안의 여러 개)을 로드. 플래그 하나에 경로 하나이며, 여러 개면 반복(`--plugin-dir A --plugin-dir B.zip`). 플러그인 폴더를 넘기는 방식은 v2.1.265 이상 | 예: `claude --plugin-dir ./my-plugin` |
 | `--plugin-url` | 이 세션에서만 URL의 플러그인 `.zip`을 가져옴. 여러 개면 플래그를 반복하거나, 따옴표 안에 공백으로 구분한 URL을 한 번에 전달 | 예: `claude --plugin-url https://example.com/plugin.zip` |
 | `--setting-sources` | 불러올 설정 출처를 쉼표로 구분해 지정(`user`, `project`, `local`). 이 세션에서 시작하는 세션이 목록을 상속하는 방식은 에이전트 뷰·에이전트 팀 문서 참고 | 예: `claude --setting-sources user,project` |
@@ -203,4 +205,4 @@
 
 ---
 
-**출처:** [공식 문서 cli-reference](https://code.claude.com/docs/en/cli-reference) · 이 표는 2026-11-18에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 항목이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.
+**출처:** [공식 문서 cli-reference](https://code.claude.com/docs/en/cli-reference) · 이 표는 2026-11-22에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 항목이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.

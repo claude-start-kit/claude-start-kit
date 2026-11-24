@@ -55,7 +55,7 @@
 | `/statusline` | 상태 표시줄을 설정합니다. 원하는 내용을 말로 설명하거나, 인자 없이 실행하면 셸 프롬프트를 기준으로 자동 구성합니다. |  |
 | `/terminal-setup` | VS Code, Cursor, Devin Desktop, Alacritty, Zed에서 줄바꿈용 Shift+Enter 키 바인딩을 설치합니다. Apple Terminal에서는 Option+Enter 줄바꿈을 켜고 경고음을 끄며, iTerm2에서는 클립보드 접근을 켭니다. |  |
 | `/theme` | 색 테마를 바꿉니다. 터미널의 밝기에 맞추는 `auto`, 밝은·어두운 변형, 색각 접근성(daltonized) 테마, 터미널 팔레트를 쓰는 ANSI 테마 등이 있습니다. |  |
-| `/tui [default\|fullscreen]` | 터미널 UI 렌더러를 설정하고 대화를 유지한 채 다시 실행합니다. `fullscreen`은 깜박임 없는 전체 화면 렌더러를 켭니다. 인자가 없으면 현재 렌더러를 출력합니다. |  |
+| `/tui [classic\|fullscreen]` | 터미널 UI 렌더러를 설정하고 대화를 유지한 채 다시 실행합니다. `fullscreen`은 깜박임 없는 전체 화면 렌더러를 켭니다. 인자가 없으면 현재 렌더러를 출력합니다. | v2.1.327+ |
 | `/voice [hold\|tap\|off]` | 음성 받아쓰기를 켜고 끕니다. `hold`·`tap`처럼 특정 모드로 켤 수도 있습니다. Claude.ai 계정이 필요합니다. |  |
 
 ## 권한·보안·훅 (7)
@@ -204,4 +204,4 @@
 
 ---
 
-**출처:** [공식 문서 commands](https://code.claude.com/docs/en/commands) · 이 표는 2026-11-18에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 명령이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.
+**출처:** [공식 문서 commands](https://code.claude.com/docs/en/commands) · 이 표는 2026-11-22에 공식 문서에서 자동 추출했고, 설명은 한국어로 옮긴 것입니다. 한국어 설명이 원문과 다르거나 새 명령이 보이지 않으면 원문을 기준으로 하세요. 이 표는 작성에 쓴 Claude Code 2.1.323 기준 문서이며, 내 버전에 따라 다를 수 있습니다.

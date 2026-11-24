@@ -41,7 +41,7 @@ model: sonnet
 |---|---|
 | `name` · `description` | **필수.** description이 "언제 부를지"의 기준 |
 | `tools` | 허용할 도구 (생략하면 상속) |
-| `model` | sonnet · opus · haiku · inherit 등 |
+| `model` | sonnet · opus · haiku · fable · inherit 등 |
 
 ## 저장 위치
 | 위치 | 범위 |
